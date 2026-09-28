@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chennai Fresher Jobs - Real-time Dashboard</title>
+<style>
+  :root{
+    --ink:#1a1d1a;
+    --paper:#f6f5f0;
+    --line:#d8d5c9;
+    --accent:#2f6b4f;
+    --accent-soft:#e4efe8;
+    --muted:#6b6a63;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Iowan Old Style","Georgia",serif;
+    background:var(--paper);
+    color:var(--ink);
+  }
+  header{
+    padding:32px 40px 20px;
+    border-bottom:2px solid var(--ink);
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  header h1{
+    margin:0;
+    font-size:1.9rem;
+    font-weight:600;
+    letter-spacing:0.2px;
+  }
+  header h1 .location-badge{
+    font-size:0.9rem;
+    color:var(--accent);
+    font-weight:normal;
+    background:var(--accent-soft);
+    padding:4px 12px;
+    border-radius:4px;
+    margin-left:12px;
+  }
+  header .meta{
+    font-family:"Menlo","Consolas",monospace;
+    font-size:0.78rem;
+    color:var(--muted);
+  }
+  .realtime-indicator{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    color:var(--accent);
+    font-size:0.75rem;
+  }
+  .realtime-indicator .dot{
+    width:8px;
+    height:8px;
+    background:var(--accent);
+    border-radius:50%;
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%, 100% {opacity:1;}
+    50% {opacity:0.3;}
+  }
+  .controls{
+    display:flex;
+    gap:12px;
+    padding:20px 40px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .controls input[type=text]{
+    font-family:inherit;
+    font-size:0.95rem;
+    padding:8px 12px;
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:3px;
+    flex:1;
+    min-width:180px;
+  }
+  .tabs{
+    display:flex;
+    border:1px solid var(--ink);
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .tabs button{
+    font-family:inherit;
+    font-size:0.85rem;
+    padding:8px 16px;
+    background:#fff;
+    border:none;
+    cursor:pointer;
+    border-right:1px solid var(--ink);
+  }
+  .tabs button:last-child{border-right:none;}
+  .tabs button.active{
+    background:var(--ink);
+    color:var(--paper);
+  }
+  .count-badge{
+    font-family:"Menlo","Consolas",monospace;
+    font-size:0.78rem;
+    color:var(--muted);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 40px 40px;
+    width:calc(100% - 80px);
+  }
+  thead th{
+    text-align:left;
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--muted);
+    font-family:"Menlo","Consolas",monospace;
+    font-weight:normal;
+    padding:0 12px 10px;
+    border-bottom:1px solid var(--ink);
+  }
+  tbody tr{
+    border-bottom:1px solid var(--line);
+  }
+  tbody tr:hover{background:var(--accent-soft);}
+  tbody td{
+    padding:14px 12px;
+    font-size:0.95rem;
+    vertical-align:top;
+  }
+  .company{font-weight:600;}
+  .badge-new{
+    display:inline-block;
+    font-family:"Menlo","Consolas",monospace;
+    font-size:0.65rem;
+    color:var(--accent);
+    border:1px solid var(--accent);
+    padding:1px 6px;
+    border-radius:3px;
+    margin-left:8px;
+  }
+  .loc, .src{color:var(--muted); font-size:0.85rem;}
+  a.apply-link{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+    font-size:0.9rem;
+  }
+  .empty-state{
+    margin:60px 40px;
+    padding:40px;
+    border:1px dashed var(--line);
+    text-align:center;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Chennai Fresher Jobs <span class="location-badge">📍 Chennai</span></h1>
+    <div class="meta">
+      <span id="generatedMeta">No data yet</span>
+      <span class="realtime-indicator" id="realtimeIndicator" style="display:none;">
+        <span class="dot"></span>
+        Real-time monitoring active
+      </span>
+    </div>
+  </div>
+  <div class="count-badge" id="totalCount"></div>
+</header>
+
+<div class="controls">
+  <div class="tabs">
+    <button id="tabToday" class="active">New today</button>
+    <button id="tabAll">All tracked</button>
+  </div>
+  <input type="text" id="searchBox" placeholder="Filter by company or role…">
+</div>
+
+<table id="jobsTable" style="display:none;">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Role</th>
+      <th>Location</th>
+      <th>Experience</th>
+      <th>First seen</th>
+      <th>Source</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="jobsBody"></tbody>
+</table>
+
+<div class="empty-state" id="emptyState">
+  No data loaded yet. Run <code>python enhanced_scraper.py</code> in this folder, then refresh this page.
+</div>
+
+<script src="dashboard_data.js" onerror="console.warn('dashboard_data.js not found yet - run scraper.py first')"></script>
+<script>
+  const data = (typeof JOBS_DATA !== "undefined") ? JOBS_DATA : null;
+  let currentTab = "today";
+
+  function render(){
+    const table = document.getElementById("jobsTable");
+    const empty = document.getElementById("emptyState");
+    const body = document.getElementById("jobsBody");
+    const meta = document.getElementById("generatedMeta");
+    const totalCount = document.getElementById("totalCount");
+
+    if(!data || !data.all_jobs || data.all_jobs.length === 0){
+      table.style.display = "none";
+      empty.style.display = "block";
+      return;
+    }
+
+    empty.style.display = "none";
+    table.style.display = "table";
+    
+    // Display timestamp if available
+    const timestamp = data.generated_timestamp || data.generated_at;
+    meta.textContent = "Last scraped: " + timestamp;
+    
+    totalCount.textContent = data.all_jobs.length + " roles tracked total";
+
+    const query = document.getElementById("searchBox").value.toLowerCase();
+
+    let jobs = data.all_jobs;
+    if(currentTab === "today"){
+      jobs = jobs.filter(j => j.first_seen === data.generated_at);
+    }
+    if(query){
+      jobs = jobs.filter(j =>
+        (j.company||"").toLowerCase().includes(query) ||
+        (j.title||"").toLowerCase().includes(query) ||
+        (j.location||"").toLowerCase().includes(query)
+      );
+    }
+
+    body.innerHTML = "";
+    if(jobs.length === 0){
+      body.innerHTML = '<tr><td colspan="7" style="color:var(--muted); padding:30px 12px;">No roles match.</td></tr>';
+      return;
+    }
+
+    for(const job of jobs){
+      const isNew = job.first_seen === data.generated_at;
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="company">${escapeHtml(job.company)}</td>
+        <td>${escapeHtml(job.title)}${isNew ? '<span class="badge-new">NEW</span>' : ''}</td>
+        <td class="loc">${escapeHtml(job.location || "Chennai")}</td>
+        <td class="loc">${escapeHtml(job.experience || "Fresher")}</td>
+        <td class="loc">${escapeHtml(job.first_seen_time || job.first_seen || "—")}</td>
+        <td class="src">${escapeHtml(job.source || "—")}</td>
+        <td>${job.link ? `<a class="apply-link" href="${escapeHtml(job.link)}" target="_blank" rel="noopener">Apply</a>` : ""}</td>
+      `;
+      body.appendChild(tr);
+    }
+  }
+
+  function escapeHtml(str){
+    const div = document.createElement("div");
+    div.textContent = str == null ? "" : str;
+    return div.innerHTML;
+  }
+
+  document.getElementById("tabToday").addEventListener("click", () => {
+    currentTab = "today";
+    document.getElementById("tabToday").classList.add("active");
+    document.getElementById("tabAll").classList.remove("active");
+    render();
+  });
+  document.getElementById("tabAll").addEventListener("click", () => {
+    currentTab = "all";
+    document.getElementById("tabAll").classList.add("active");
+    document.getElementById("tabToday").classList.remove("active");
+    render();
+  });
+  document.getElementById("searchBox").addEventListener("input", render);
+
+  // Auto-refresh dashboard when data file changes (for real-time mode)
+  let lastDataCheck = Date.now();
+  function checkForUpdates(){
+    if(typeof JOBS_DATA !== "undefined" && JOBS_DATA.generated_timestamp){
+      // Dashboard is active, could poll for updates
+      // For now, user can manually refresh
+    }
+  }
+  setInterval(checkForUpdates, 60000); // Check every minute
+
+  render();
+</script>
+
+</body>
+</html>

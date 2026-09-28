@@ -1,0 +1,496 @@
+2026-09-27 12:59:54,259 - INFO - 
+======================================================================
+2026-09-27 12:59:54,259 - INFO - ULTRA SCRAPER - Getting ALL Chennai Fresher Jobs
+2026-09-27 12:59:54,259 - INFO - ======================================================================
+
+2026-09-27 12:59:54,259 - INFO - 
+============================================================
+2026-09-27 12:59:54,259 - INFO - Scraping: Freshersworld - Chennai
+2026-09-27 12:59:54,259 - INFO - URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:59:56,677 - INFO - -> Found 20 job cards with: div.job-container
+2026-09-27 12:59:56,694 - INFO - -> Extracted 20 jobs from Freshersworld - Chennai
+2026-09-27 12:59:56,694 - INFO -    NEW: ITI Technician - Chennai Jobs Opening in JEEVADITY at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Telugu Telecaller-Fresher14K Inhand Perungudi Chen at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Email Chat Support Executive Salem Chennai Fresher at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Telecallers Jobs Opening in Client of Teamlease at at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Business Development Executive Jobs Opening in MAG at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: 3D Animator Jobs Opening in Client of freshersworl at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Catalog Analyst Jobs Opening in Client of freshers at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Software Engineer Jobs Opening in Leading MNC Comp at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Project Technical Staff-III Jobs Opening in VIT Un at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Mechanical Service Engineer Jobs Opening in Keenma at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Social Media Intern Jobs Opening in Zingbus at Che at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Inside Sales Specialist Jobs Opening in A Client o at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Calibration Engineer Jobs Opening in A client of f at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Application Support Engineer Jobs Opening in Clien at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Graphic Designer Jobs Opening in A Client of fresh at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Senior Engineer - Mobile App Developer Jobs Openin at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Hardware/Service Engineer Jobs Opening in INZPIRE  at Unknown
+2026-09-27 12:59:56,694 - INFO -    NEW: Diploma Electrical Engineer Jobs Opening in A clie at Unknown
+2026-09-27 12:59:56,706 - INFO -    NEW: Full-Stack Developer Jobs Opening in A client of f at Unknown
+2026-09-27 12:59:56,706 - INFO -    NEW: Jobs Opening in Wheels India Limited at ChennaiLes at Unknown
+2026-09-27 12:59:58,707 - INFO - 
+============================================================
+2026-09-27 12:59:58,707 - INFO - Scraping: Naukri - Chennai Freshers
+2026-09-27 12:59:58,707 - INFO - URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 12:59:58,892 - WARNING - -> No job cards found
+2026-09-27 12:59:58,892 - INFO - -> Retrying...
+2026-09-27 13:00:00,893 - INFO - 
+============================================================
+2026-09-27 13:00:00,893 - INFO - Scraping: Naukri - Chennai Freshers
+2026-09-27 13:00:00,893 - INFO - URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 13:00:01,053 - WARNING - -> No job cards found
+2026-09-27 13:00:03,067 - INFO - 
+============================================================
+2026-09-27 13:00:03,067 - INFO - Scraping: Indeed India - Chennai
+2026-09-27 13:00:03,067 - INFO - URL: https://in.indeed.com/jobs?q=fresher+OR+%22entry+level%22&l=Chennai%2C+Tamil+Nadu
+2026-09-27 13:00:03,117 - INFO - -> Trying with Selenium...
+2026-09-27 13:00:03,117 - INFO - ====== WebDriver manager ======
+2026-09-27 13:00:04,691 - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-27 13:00:04,729 - INFO - There is no [win64] chromedriver "154.0.8037.57" for browser google-chrome "154.0.8037" in cache
+2026-09-27 13:00:05,406 - INFO - There is no [win64] chromedriver "154.0.8037.57" for browser google-chrome "154.0.8037" in cache
+2026-09-27 13:00:05,406 - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-27 13:00:05,556 - INFO - WebDriver version 154.0.8037.57 selected
+2026-09-27 13:00:05,567 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.57/win64/chromedriver-win64.zip
+2026-09-27 13:00:05,567 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.57/win64/chromedriver-win64.zip
+2026-09-27 13:00:05,873 - INFO - Driver downloading response is 200
+2026-09-27 13:00:08,212 - INFO - Driver has been saved in cache [C:\Users\galla\.wdm\drivers\chromedriver\win64\154.0.8037.57]
+2026-09-27 13:00:09,346 - INFO - -> Selenium WebDriver initialized
+2026-09-27 13:00:11,578 - INFO - -> Found 16 job cards with: div.job_seen_beacon
+2026-09-27 13:00:11,585 - INFO - -> Extracted 0 jobs from Indeed India - Chennai
+2026-09-27 13:00:11,585 - INFO - -> Retrying...
+2026-09-27 13:00:13,587 - INFO - 
+============================================================
+2026-09-27 13:00:13,587 - INFO - Scraping: Indeed India - Chennai
+2026-09-27 13:00:13,587 - INFO - URL: https://in.indeed.com/jobs?q=fresher+OR+%22entry+level%22&l=Chennai%2C+Tamil+Nadu
+2026-09-27 13:00:13,627 - INFO - -> Trying with Selenium...
+2026-09-27 13:00:34,392 - WARNING - -> Failed to fetch page
+2026-09-27 13:00:36,406 - INFO - 
+============================================================
+2026-09-27 13:00:36,406 - INFO - Scraping: Monster India - Chennai
+2026-09-27 13:00:36,406 - INFO - URL: https://www.monsterindia.com/search/fresher-jobs-in-chennai
+2026-09-27 13:00:36,470 - INFO - -> Trying with Selenium...
+2026-09-27 13:00:57,145 - WARNING - -> Failed to fetch page
+2026-09-27 13:00:57,145 - INFO - -> Retrying...
+2026-09-27 13:00:59,146 - INFO - 
+============================================================
+2026-09-27 13:00:59,146 - INFO - Scraping: Monster India - Chennai
+2026-09-27 13:00:59,146 - INFO - URL: https://www.monsterindia.com/search/fresher-jobs-in-chennai
+2026-09-27 13:00:59,238 - INFO - -> Trying with Selenium...
+2026-09-27 13:01:19,806 - WARNING - -> Failed to fetch page
+2026-09-27 13:01:21,820 - INFO - 
+============================================================
+2026-09-27 13:01:21,820 - INFO - Scraping: TimesJobs - Chennai Entry Level
+2026-09-27 13:01:21,820 - INFO - URL: https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=fresher&txtLocation=chennai
+2026-09-27 13:01:21,915 - WARNING - -> No job cards found
+2026-09-27 13:01:21,917 - INFO - -> Retrying...
+2026-09-27 13:01:23,923 - INFO - 
+============================================================
+2026-09-27 13:01:23,923 - INFO - Scraping: TimesJobs - Chennai Entry Level
+2026-09-27 13:01:23,923 - INFO - URL: https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=fresher&txtLocation=chennai
+2026-09-27 13:01:23,992 - WARNING - -> No job cards found
+2026-09-27 13:01:25,994 - INFO - 
+============================================================
+2026-09-27 13:01:25,994 - INFO - Scraping: Shine - Chennai
+2026-09-27 13:01:25,994 - INFO - URL: https://www.shine.com/job-search/fresher-jobs-in-chennai
+2026-09-27 13:01:26,296 - WARNING - -> No job cards found
+2026-09-27 13:01:26,296 - INFO - -> Retrying...
+2026-09-27 13:01:28,305 - INFO - 
+============================================================
+2026-09-27 13:01:28,305 - INFO - Scraping: Shine - Chennai
+2026-09-27 13:01:28,305 - INFO - URL: https://www.shine.com/job-search/fresher-jobs-in-chennai
+2026-09-27 13:01:28,372 - WARNING - -> No job cards found
+2026-09-27 13:01:30,383 - INFO - 
+============================================================
+2026-09-27 13:01:30,383 - INFO - Scraping: Internshala - Chennai
+2026-09-27 13:01:30,383 - INFO - URL: https://internshala.com/jobs/fresher-jobs-in-chennai/
+2026-09-27 13:01:31,372 - INFO - -> Found 40 job cards with: div.individual_internship
+2026-09-27 13:01:31,390 - INFO - -> Extracted 0 jobs from Internshala - Chennai
+2026-09-27 13:01:31,390 - INFO - -> Retrying...
+2026-09-27 13:01:33,390 - INFO - 
+============================================================
+2026-09-27 13:01:33,390 - INFO - Scraping: Internshala - Chennai
+2026-09-27 13:01:33,390 - INFO - URL: https://internshala.com/jobs/fresher-jobs-in-chennai/
+2026-09-27 13:01:34,341 - INFO - -> Found 40 job cards with: div.individual_internship
+2026-09-27 13:01:34,357 - INFO - -> Extracted 0 jobs from Internshala - Chennai
+2026-09-27 13:01:36,371 - INFO - 
+============================================================
+2026-09-27 13:01:36,371 - INFO - Scraping: LinkedIn - Chennai Entry Level
+2026-09-27 13:01:36,371 - INFO - URL: https://www.linkedin.com/jobs/search/?keywords=fresher%20OR%20entry%20level&location=Chennai
+2026-09-27 13:01:37,457 - INFO - -> Found 59 job cards with: div.job-search-card
+2026-09-27 13:01:37,463 - INFO - -> Extracted 50 jobs from LinkedIn - Chennai Entry Level
+2026-09-27 13:01:37,469 - INFO -    NEW: YouTube Video Editor – Fresher at Dreamscribe Brands
+2026-09-27 13:01:37,469 - INFO -    NEW: Order to Cash Operations New Associate-Voice at Accenture in India
+2026-09-27 13:01:37,469 - INFO -    NEW: Assembly Process Executive / Assembly Technician at Rockwell Automation
+2026-09-27 13:01:37,470 - INFO -    NEW: Order to Cash Operations New Associate - Voice at Accenture in India
+2026-09-27 13:01:37,470 - INFO -    NEW: Account Assistant | Best Construction Company in C at Sankar Infraprojects (P) Ltd
+2026-09-27 13:01:37,470 - INFO -    NEW: Video Editor at Justo Global
+2026-09-27 13:01:37,470 - INFO -    NEW: GET - CAE at Expleo Group
+2026-09-27 13:01:37,470 - INFO -    NEW: CAD Engineer - (Mechanical / Civil & Electrical) at CADD Centre Chennai
+2026-09-27 13:01:37,470 - INFO -    NEW: Process Associate at Harris Computer
+2026-09-27 13:01:37,470 - INFO -    NEW: Certified Freshers Medical Coding- Chennai at R1 RCM
+2026-09-27 13:01:37,470 - INFO -    NEW: IT  Technical Support at CRUX
+2026-09-27 13:01:37,470 - INFO -    NEW: Invoice Administrator at Emerson
+2026-09-27 13:01:37,471 - INFO -    NEW: Social Media Associate at Origin Nutrition
+2026-09-27 13:01:37,471 - INFO -    NEW: Field Sales Executive | Sriperumbudur | Any Gradua at Rentokil Initial
+2026-09-27 13:01:37,471 - INFO -    NEW: Freshers-Process Associates (Trainee) at CogNet
+2026-09-27 13:01:37,471 - INFO -    NEW: Process Associate at DATAMARK, Inc.
+2026-09-27 13:01:37,471 - INFO -    NEW: Process Analyst – Trade Finance (French) at IBM
+2026-09-27 13:01:37,471 - INFO -    NEW: Junior Team Member - Manufacturing at Momentive
+2026-09-27 13:01:37,471 - INFO -    NEW: CMA Freshers at Metayb
+2026-09-27 13:01:37,471 - INFO -    NEW: Executive - SaT - GOV - SaT - TCF - Infrastructure at EY
+2026-09-27 13:01:37,471 - INFO -    NEW: Field Sales Executive - Kelambakkam at Rentokil Initial
+2026-09-27 13:01:37,471 - INFO -    NEW: PLM Data Migration Associate – Mechanical Freshers at Soffit Infrastructure Services
+2026-09-27 13:01:37,471 - INFO -    NEW: Voice process at Sutherland
+2026-09-27 13:01:37,471 - INFO -    NEW: Graduate Architect (Digital Practice) at Arkie Atelier Design India [P]
+2026-09-27 13:01:37,471 - INFO -    NEW: Trainee - Account Executive at Coronis Ajuba
+2026-09-27 13:01:37,471 - INFO -    NEW: Apprentice - Service Engineer at Eppendorf
+2026-09-27 13:01:37,471 - INFO -    NEW: Customer Support Executive - International Voice P at AUSTRA RCM PRIVATE LIMITED
+2026-09-27 13:01:37,472 - INFO -    NEW: junior dotnet developer at Colan Infotech Private Limited
+2026-09-27 13:01:37,472 - INFO -    NEW: Junior Accountant / Finance Executive – Night Shif at ELIXIR Global
+2026-09-27 13:01:37,472 - INFO -    NEW: Dot Net  Developer at Green Komet- Bridging Professi
+2026-09-27 13:01:37,472 - INFO -    NEW: Executive Assistant at Green Komet- Bridging Professi
+2026-09-27 13:01:37,472 - INFO -    NEW: Reconciliation and Proofing Representative at Citi
+2026-09-27 13:01:37,472 - INFO -    NEW: Content Creator at 3Ding
+2026-09-27 13:01:37,472 - INFO -    NEW: Junior Financial Analyst - Cost Accounting Solutio at Flex
+2026-09-27 13:01:37,472 - INFO -    NEW: Graduate Engineering Trainee - 2026 at SQ1 Security
+2026-09-27 13:01:37,472 - INFO -    NEW: Commis I at Pullman Hotels & Resorts
+2026-09-27 13:01:37,472 - INFO -    NEW: Junior Associate AR at Guidehouse
+2026-09-27 13:01:37,472 - INFO -    NEW: Graduate Engineering Trainee (Low Frequency Applic at CADFEM APAC
+2026-09-27 13:01:37,472 - INFO -    NEW: Collection Executive | Best Construction Company i at Sankar Infraprojects (P) Ltd
+2026-09-27 13:01:37,472 - INFO -    NEW: Ops Support Specialist - C04 - Chennai / Pune at Citi
+2026-09-27 13:01:37,472 - INFO -    NEW: US Voice Process - AR Calling (Freshers) at Medical Billing Unlimited | A 
+2026-09-27 13:01:37,472 - INFO -    NEW: Sales Consultant at Capital Honda
+2026-09-27 13:01:37,472 - INFO -    NEW: Financial Analyst - Cost Accounting Solutions at Flex
+2026-09-27 13:01:37,472 - INFO -    NEW: Trainee - R&D at Kemin Industries
+2026-09-27 13:01:37,473 - INFO -    NEW: Content Writer – Specialist at Experienzing
+2026-09-27 13:01:37,473 - INFO -    NEW: Junior architect / architectural assistant at MAN & SOIL BUILDERS PRIVATE LI
+2026-09-27 13:01:37,473 - INFO -    NEW: SOLAR SALES EXECUTIVES at Mounee Consulting Services Pri
+2026-09-27 13:01:37,473 - INFO -    NEW: International Voice Process at Sutherland
+2026-09-27 13:01:37,473 - INFO -    NEW: Software Engineer Trainee - PHP/MYSQL at Unibros Technologies
+2026-09-27 13:01:37,473 - INFO -    NEW: Diploma Engineer Trainee - Electrical (2026 passou at Vertiv
+2026-09-27 13:01:39,488 - INFO - 
+============================================================
+2026-09-27 13:01:39,488 - INFO - Scraping: Foundit - Chennai
+2026-09-27 13:01:39,488 - INFO - URL: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-27 13:01:39,603 - INFO - -> Trying with Selenium...
+2026-09-27 13:02:00,540 - WARNING - -> Failed to fetch page
+2026-09-27 13:02:00,540 - INFO - -> Retrying...
+2026-09-27 13:02:02,546 - INFO - 
+============================================================
+2026-09-27 13:02:02,546 - INFO - Scraping: Foundit - Chennai
+2026-09-27 13:02:02,546 - INFO - URL: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-27 13:02:02,609 - INFO - -> Trying with Selenium...
+2026-09-27 13:02:22,768 - WARNING - -> Failed to fetch page
+2026-09-27 13:02:24,782 - INFO - 
+============================================================
+2026-09-27 13:02:24,782 - INFO - Scraping: IIMJobs - Chennai
+2026-09-27 13:02:24,782 - INFO - URL: https://www.iimjobs.com/j/fresher-chennai-1.html
+2026-09-27 13:02:25,553 - WARNING - -> No job cards found
+2026-09-27 13:02:25,553 - INFO - -> Retrying...
+2026-09-27 13:02:27,554 - INFO - 
+============================================================
+2026-09-27 13:02:27,554 - INFO - Scraping: IIMJobs - Chennai
+2026-09-27 13:02:27,554 - INFO - URL: https://www.iimjobs.com/j/fresher-chennai-1.html
+2026-09-27 13:02:27,738 - WARNING - -> No job cards found
+2026-09-27 13:02:29,745 - INFO - 
+============================================================
+2026-09-27 13:02:29,745 - INFO - Scraping: Hirist - Chennai IT
+2026-09-27 13:02:29,745 - INFO - URL: https://www.hirist.tech/jobs/fresher-jobs-chennai
+2026-09-27 13:02:29,846 - WARNING - -> Failed to fetch page
+2026-09-27 13:02:29,846 - INFO - -> Retrying...
+2026-09-27 13:02:31,854 - INFO - 
+============================================================
+2026-09-27 13:02:31,854 - INFO - Scraping: Hirist - Chennai IT
+2026-09-27 13:02:31,854 - INFO - URL: https://www.hirist.tech/jobs/fresher-jobs-chennai
+2026-09-27 13:02:31,903 - WARNING - -> Failed to fetch page
+2026-09-27 13:02:33,914 - INFO - 
+============================================================
+2026-09-27 13:02:33,914 - INFO - Scraping: Cutshort - Chennai Tech
+2026-09-27 13:02:33,914 - INFO - URL: https://cutshort.io/jobs/fresher-jobs-in-chennai
+2026-09-27 13:02:34,062 - WARNING - -> No job cards found
+2026-09-27 13:02:34,062 - INFO - -> Retrying...
+2026-09-27 13:02:36,068 - INFO - 
+============================================================
+2026-09-27 13:02:36,068 - INFO - Scraping: Cutshort - Chennai Tech
+2026-09-27 13:02:36,068 - INFO - URL: https://cutshort.io/jobs/fresher-jobs-in-chennai
+2026-09-27 13:02:36,094 - WARNING - -> No job cards found
+2026-09-27 13:02:38,098 - INFO - 
+============================================================
+2026-09-27 13:02:38,098 - INFO - Scraping: Instahyre - Chennai
+2026-09-27 13:02:38,098 - INFO - URL: https://www.instahyre.com/search-jobs/?location=Chennai&experience=0-1
+2026-09-27 13:02:38,288 - WARNING - -> No job cards found
+2026-09-27 13:02:38,288 - INFO - -> Retrying...
+2026-09-27 13:02:40,301 - INFO - 
+============================================================
+2026-09-27 13:02:40,301 - INFO - Scraping: Instahyre - Chennai
+2026-09-27 13:02:40,301 - INFO - URL: https://www.instahyre.com/search-jobs/?location=Chennai&experience=0-1
+2026-09-27 13:02:40,437 - WARNING - -> No job cards found
+2026-09-27 13:02:42,447 - INFO - 
+============================================================
+2026-09-27 13:02:42,447 - INFO - Scraping: Apna - Chennai
+2026-09-27 13:02:42,447 - INFO - URL: https://apna.co/jobs/chennai
+2026-09-27 13:02:42,668 - INFO - -> Trying with Selenium...
+2026-09-27 13:03:03,157 - WARNING - -> Failed to fetch page
+2026-09-27 13:03:03,158 - INFO - -> Retrying...
+2026-09-27 13:03:05,168 - INFO - 
+============================================================
+2026-09-27 13:03:05,168 - INFO - Scraping: Apna - Chennai
+2026-09-27 13:03:05,168 - INFO - URL: https://apna.co/jobs/chennai
+2026-09-27 13:03:05,284 - INFO - -> Trying with Selenium...
+2026-09-27 13:03:25,602 - WARNING - -> Failed to fetch page
+2026-09-27 13:03:27,621 - INFO - 
+======================================================================
+2026-09-27 13:03:27,621 - INFO - SCRAPING COMPLETE!
+2026-09-27 13:03:27,621 - INFO - ======================================================================
+2026-09-27 13:03:27,621 - INFO - Sources attempted: 14
+2026-09-27 13:03:27,621 - INFO - New jobs found: 70
+2026-09-27 13:03:27,621 - INFO - Total jobs in database: 89
+2026-09-27 13:03:27,621 - INFO - 
+Open dashboard.html to view all 89 Chennai fresher jobs!
+2026-09-27 13:03:27,621 - INFO - ======================================================================
+
+2026-09-27 13:04:25,225 - INFO - 
+======================================================================
+2026-09-27 13:04:25,225 - INFO - ULTRA SCRAPER - Getting ALL Chennai Fresher Jobs
+2026-09-27 13:04:25,225 - INFO - ======================================================================
+
+2026-09-27 13:04:25,225 - INFO - 
+============================================================
+2026-09-27 13:04:25,225 - INFO - Scraping: Freshersworld - Chennai
+2026-09-27 13:04:25,225 - INFO - URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 13:04:27,716 - INFO - -> Found 20 job cards with: div.job-container
+2026-09-27 13:04:27,732 - INFO - -> Extracted 20 jobs from Freshersworld - Chennai
+2026-09-27 13:04:27,732 - INFO -    NEW: ITI Technician - Chennai Jobs Opening in JEEVADITY at JEEVADITYA SOLAR POWER PRIVATE
+2026-09-27 13:04:27,732 - INFO -    NEW: Telugu Telecaller-Fresher14K Inhand Perungudi Chen at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Email Chat Support Executive Salem Chennai Fresher at Flexwork
+2026-09-27 13:04:27,732 - INFO -    NEW: Telecallers Jobs Opening in Client of Teamlease at at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Business Development Executive Jobs Opening in MAG at MAGWIL
+2026-09-27 13:04:27,732 - INFO -    NEW: 3D Animator Jobs Opening in Client of freshersworl at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Catalog Analyst Jobs Opening in Client of freshers at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Software Engineer Jobs Opening in Leading MNC Comp at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Project Technical Staff-III Jobs Opening in VIT Un at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Graphic Designer Jobs Opening in A Client of fresh at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Social Media Intern Jobs Opening in Zingbus at Che at Zingbus
+2026-09-27 13:04:27,732 - INFO -    NEW: Inside Sales Specialist Jobs Opening in A Client o at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Calibration Engineer Jobs Opening in A client of f at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Application Support Engineer Jobs Opening in Clien at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Mechanical Service Engineer Jobs Opening in Keenma at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Hardware/Service Engineer Jobs Opening in INZPIRE  at INZPIRE IOT SOLUTIONS PVT. LTD
+2026-09-27 13:04:27,732 - INFO -    NEW: Diploma Electrical Engineer Jobs Opening in A clie at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Full-Stack Developer Jobs Opening in A client of f at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Senior Engineer - Mobile App Developer Jobs Openin at Unknown
+2026-09-27 13:04:27,732 - INFO -    NEW: Jobs Opening in Ashok Leyland Limited at ChennaiLe at Unknown
+2026-09-27 13:04:29,733 - INFO - 
+============================================================
+2026-09-27 13:04:29,733 - INFO - Scraping: Naukri - Chennai Freshers
+2026-09-27 13:04:29,733 - INFO - URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 13:04:29,882 - WARNING - -> No job cards found
+2026-09-27 13:04:29,882 - INFO - -> Retrying...
+2026-09-27 13:04:31,884 - INFO - 
+============================================================
+2026-09-27 13:04:31,884 - INFO - Scraping: Naukri - Chennai Freshers
+2026-09-27 13:04:31,884 - INFO - URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 13:04:32,011 - WARNING - -> No job cards found
+2026-09-27 13:04:34,018 - INFO - 
+============================================================
+2026-09-27 13:04:34,018 - INFO - Scraping: Indeed India - Chennai
+2026-09-27 13:04:34,018 - INFO - URL: https://in.indeed.com/jobs?q=fresher+OR+%22entry+level%22&l=Chennai%2C+Tamil+Nadu
+2026-09-27 13:04:34,097 - INFO - -> Trying with Selenium...
+2026-09-27 13:04:34,097 - INFO - ====== WebDriver manager ======
+2026-09-27 13:04:35,067 - INFO - Driver [C:\Users\galla\.wdm\drivers\chromedriver\win64\154.0.8037.57\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-27 13:04:35,988 - INFO - -> Selenium WebDriver initialized
+2026-09-27 13:04:38,317 - INFO - -> Found 16 job cards with: div.job_seen_beacon
+2026-09-27 13:04:38,325 - INFO - -> Extracted 0 jobs from Indeed India - Chennai
+2026-09-27 13:04:38,325 - INFO - -> Retrying...
+2026-09-27 13:04:40,340 - INFO - 
+============================================================
+2026-09-27 13:04:40,340 - INFO - Scraping: Indeed India - Chennai
+2026-09-27 13:04:40,340 - INFO - URL: https://in.indeed.com/jobs?q=fresher+OR+%22entry+level%22&l=Chennai%2C+Tamil+Nadu
+2026-09-27 13:04:40,377 - INFO - -> Trying with Selenium...
+2026-09-27 13:05:01,599 - WARNING - -> Failed to fetch page
+2026-09-27 13:05:03,614 - INFO - 
+============================================================
+2026-09-27 13:05:03,614 - INFO - Scraping: Monster India - Chennai
+2026-09-27 13:05:03,614 - INFO - URL: https://www.monsterindia.com/search/fresher-jobs-in-chennai
+2026-09-27 13:05:03,680 - INFO - -> Trying with Selenium...
+2026-09-27 13:05:24,301 - WARNING - -> Failed to fetch page
+2026-09-27 13:05:24,301 - INFO - -> Retrying...
+2026-09-27 13:05:26,312 - INFO - 
+============================================================
+2026-09-27 13:05:26,312 - INFO - Scraping: Monster India - Chennai
+2026-09-27 13:05:26,312 - INFO - URL: https://www.monsterindia.com/search/fresher-jobs-in-chennai
+2026-09-27 13:05:26,497 - INFO - -> Trying with Selenium...
+2026-09-27 13:05:46,624 - WARNING - -> Failed to fetch page
+2026-09-27 13:05:48,639 - INFO - 
+============================================================
+2026-09-27 13:05:48,639 - INFO - Scraping: TimesJobs - Chennai Entry Level
+2026-09-27 13:05:48,639 - INFO - URL: https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=fresher&txtLocation=chennai
+2026-09-27 13:05:48,775 - WARNING - -> No job cards found
+2026-09-27 13:05:48,775 - INFO - -> Retrying...
+2026-09-27 13:05:50,778 - INFO - 
+============================================================
+2026-09-27 13:05:50,778 - INFO - Scraping: TimesJobs - Chennai Entry Level
+2026-09-27 13:05:50,778 - INFO - URL: https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=fresher&txtLocation=chennai
+2026-09-27 13:05:50,864 - WARNING - -> No job cards found
+2026-09-27 13:05:52,878 - INFO - 
+============================================================
+2026-09-27 13:05:52,878 - INFO - Scraping: Shine - Chennai
+2026-09-27 13:05:52,878 - INFO - URL: https://www.shine.com/job-search/fresher-jobs-in-chennai
+2026-09-27 13:05:53,264 - WARNING - -> No job cards found
+2026-09-27 13:05:53,264 - INFO - -> Retrying...
+2026-09-27 13:05:55,278 - INFO - 
+============================================================
+2026-09-27 13:05:55,278 - INFO - Scraping: Shine - Chennai
+2026-09-27 13:05:55,279 - INFO - URL: https://www.shine.com/job-search/fresher-jobs-in-chennai
+2026-09-27 13:05:55,395 - WARNING - -> No job cards found
+2026-09-27 13:05:57,396 - INFO - 
+============================================================
+2026-09-27 13:05:57,396 - INFO - Scraping: Internshala - Chennai
+2026-09-27 13:05:57,396 - INFO - URL: https://internshala.com/jobs/fresher-jobs-in-chennai/
+2026-09-27 13:05:58,345 - INFO - -> Found 40 job cards with: div.individual_internship
+2026-09-27 13:05:58,360 - INFO - -> Extracted 0 jobs from Internshala - Chennai
+2026-09-27 13:05:58,360 - INFO - -> Retrying...
+2026-09-27 13:06:00,361 - INFO - 
+============================================================
+2026-09-27 13:06:00,361 - INFO - Scraping: Internshala - Chennai
+2026-09-27 13:06:00,361 - INFO - URL: https://internshala.com/jobs/fresher-jobs-in-chennai/
+2026-09-27 13:06:01,260 - INFO - -> Found 40 job cards with: div.individual_internship
+2026-09-27 13:06:01,262 - INFO - -> Extracted 0 jobs from Internshala - Chennai
+2026-09-27 13:06:03,262 - INFO - 
+============================================================
+2026-09-27 13:06:03,262 - INFO - Scraping: LinkedIn - Chennai Entry Level
+2026-09-27 13:06:03,262 - INFO - URL: https://www.linkedin.com/jobs/search/?keywords=fresher%20OR%20entry%20level&location=Chennai
+2026-09-27 13:06:04,981 - INFO - -> Found 59 job cards with: div.job-search-card
+2026-09-27 13:06:04,981 - INFO - -> Extracted 50 jobs from LinkedIn - Chennai Entry Level
+2026-09-27 13:06:04,981 - INFO -    NEW: YouTube Video Editor – Fresher at Dreamscribe Brands
+2026-09-27 13:06:04,981 - INFO -    NEW: Order to Cash Operations New Associate-Voice at Accenture in India
+2026-09-27 13:06:04,981 - INFO -    NEW: Assembly Process Executive / Assembly Technician at Rockwell Automation
+2026-09-27 13:06:04,981 - INFO -    NEW: Order to Cash Operations New Associate - Voice at Accenture in India
+2026-09-27 13:06:04,981 - INFO -    NEW: Account Assistant | Best Construction Company in C at Sankar Infraprojects (P) Ltd
+2026-09-27 13:06:04,981 - INFO -    NEW: Video Editor at Justo Global
+2026-09-27 13:06:04,981 - INFO -    NEW: GET - CAE at Expleo Group
+2026-09-27 13:06:04,981 - INFO -    NEW: CAD Engineer - (Mechanical / Civil & Electrical) at CADD Centre Chennai
+2026-09-27 13:06:04,981 - INFO -    NEW: Process Associate at Harris Computer
+2026-09-27 13:06:04,981 - INFO -    NEW: Certified Freshers Medical Coding- Chennai at R1 RCM
+2026-09-27 13:06:04,981 - INFO -    NEW: IT  Technical Support at CRUX
+2026-09-27 13:06:04,981 - INFO -    NEW: Invoice Administrator at Emerson
+2026-09-27 13:06:04,981 - INFO -    NEW: Social Media Associate at Origin Nutrition
+2026-09-27 13:06:04,981 - INFO -    NEW: Field Sales Executive | Sriperumbudur | Any Gradua at Rentokil Initial
+2026-09-27 13:06:04,981 - INFO -    NEW: Freshers-Process Associates (Trainee) at CogNet
+2026-09-27 13:06:04,981 - INFO -    NEW: Process Associate at DATAMARK, Inc.
+2026-09-27 13:06:04,981 - INFO -    NEW: Process Analyst – Trade Finance (French) at IBM
+2026-09-27 13:06:04,981 - INFO -    NEW: Junior Team Member - Manufacturing at Momentive
+2026-09-27 13:06:04,981 - INFO -    NEW: CMA Freshers at Metayb
+2026-09-27 13:06:04,981 - INFO -    NEW: Executive - SaT - GOV - SaT - TCF - Infrastructure at EY
+2026-09-27 13:06:04,981 - INFO -    NEW: Field Sales Executive - Kelambakkam at Rentokil Initial
+2026-09-27 13:06:04,981 - INFO -    NEW: PLM Data Migration Associate – Mechanical Freshers at Soffit Infrastructure Services
+2026-09-27 13:06:04,981 - INFO -    NEW: Voice process at Sutherland
+2026-09-27 13:06:04,981 - INFO -    NEW: Graduate Architect (Digital Practice) at Arkie Atelier Design India [P]
+2026-09-27 13:06:04,981 - INFO -    NEW: Trainee - Account Executive at Coronis Ajuba
+2026-09-27 13:06:04,981 - INFO -    NEW: Apprentice - Service Engineer at Eppendorf
+2026-09-27 13:06:04,981 - INFO -    NEW: Customer Support Executive - International Voice P at AUSTRA RCM PRIVATE LIMITED
+2026-09-27 13:06:04,981 - INFO -    NEW: junior dotnet developer at Colan Infotech Private Limited
+2026-09-27 13:06:04,981 - INFO -    NEW: Junior Accountant / Finance Executive – Night Shif at ELIXIR Global
+2026-09-27 13:06:04,981 - INFO -    NEW: Dot Net  Developer at Green Komet- Bridging Professi
+2026-09-27 13:06:04,981 - INFO -    NEW: Executive Assistant at Green Komet- Bridging Professi
+2026-09-27 13:06:04,981 - INFO -    NEW: Reconciliation and Proofing Representative at Citi
+2026-09-27 13:06:04,981 - INFO -    NEW: Content Creator at 3Ding
+2026-09-27 13:06:04,981 - INFO -    NEW: Junior Financial Analyst - Cost Accounting Solutio at Flex
+2026-09-27 13:06:04,981 - INFO -    NEW: Graduate Engineering Trainee - 2026 at SQ1 Security
+2026-09-27 13:06:04,981 - INFO -    NEW: Commis I at Pullman Hotels & Resorts
+2026-09-27 13:06:04,981 - INFO -    NEW: Junior Associate AR at Guidehouse
+2026-09-27 13:06:04,981 - INFO -    NEW: Graduate Engineering Trainee (Low Frequency Applic at CADFEM APAC
+2026-09-27 13:06:04,981 - INFO -    NEW: Collection Executive | Best Construction Company i at Sankar Infraprojects (P) Ltd
+2026-09-27 13:06:04,981 - INFO -    NEW: Ops Support Specialist - C04 - Chennai / Pune at Citi
+2026-09-27 13:06:04,981 - INFO -    NEW: US Voice Process - AR Calling (Freshers) at Medical Billing Unlimited | A 
+2026-09-27 13:06:04,981 - INFO -    NEW: Sales Consultant at Capital Honda
+2026-09-27 13:06:04,981 - INFO -    NEW: Financial Analyst - Cost Accounting Solutions at Flex
+2026-09-27 13:06:04,981 - INFO -    NEW: Trainee - R&D at Kemin Industries
+2026-09-27 13:06:04,981 - INFO -    NEW: Content Writer – Specialist at Experienzing
+2026-09-27 13:06:04,981 - INFO -    NEW: Junior architect / architectural assistant at MAN & SOIL BUILDERS PRIVATE LI
+2026-09-27 13:06:04,981 - INFO -    NEW: SOLAR SALES EXECUTIVES at Mounee Consulting Services Pri
+2026-09-27 13:06:04,981 - INFO -    NEW: International Voice Process at Sutherland
+2026-09-27 13:06:04,981 - INFO -    NEW: Software Engineer Trainee - PHP/MYSQL at Unibros Technologies
+2026-09-27 13:06:04,981 - INFO -    NEW: Diploma Engineer Trainee - Electrical (2026 passou at Vertiv
+2026-09-27 13:06:06,994 - INFO - 
+============================================================
+2026-09-27 13:06:06,994 - INFO - Scraping: Foundit - Chennai
+2026-09-27 13:06:06,994 - INFO - URL: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-27 13:06:07,146 - INFO - -> Trying with Selenium...
+2026-09-27 13:06:27,894 - WARNING - -> Failed to fetch page
+2026-09-27 13:06:27,894 - INFO - -> Retrying...
+2026-09-27 13:06:29,895 - INFO - 
+============================================================
+2026-09-27 13:06:29,895 - INFO - Scraping: Foundit - Chennai
+2026-09-27 13:06:29,895 - INFO - URL: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-27 13:06:30,095 - INFO - -> Trying with Selenium...
+2026-09-27 13:06:50,277 - WARNING - -> Failed to fetch page
+2026-09-27 13:06:52,284 - INFO - 
+============================================================
+2026-09-27 13:06:52,284 - INFO - Scraping: IIMJobs - Chennai
+2026-09-27 13:06:52,284 - INFO - URL: https://www.iimjobs.com/j/fresher-chennai-1.html
+2026-09-27 13:06:52,909 - WARNING - -> No job cards found
+2026-09-27 13:06:52,909 - INFO - -> Retrying...
+2026-09-27 13:06:54,909 - INFO - 
+============================================================
+2026-09-27 13:06:54,909 - INFO - Scraping: IIMJobs - Chennai
+2026-09-27 13:06:54,909 - INFO - URL: https://www.iimjobs.com/j/fresher-chennai-1.html
+2026-09-27 13:06:55,160 - WARNING - -> No job cards found
+2026-09-27 13:06:57,177 - INFO - 
+============================================================
+2026-09-27 13:06:57,177 - INFO - Scraping: Hirist - Chennai IT
+2026-09-27 13:06:57,177 - INFO - URL: https://www.hirist.tech/jobs/fresher-jobs-chennai
+2026-09-27 13:06:57,529 - WARNING - -> Failed to fetch page
+2026-09-27 13:06:57,529 - INFO - -> Retrying...
+2026-09-27 13:06:59,535 - INFO - 
+============================================================
+2026-09-27 13:06:59,535 - INFO - Scraping: Hirist - Chennai IT
+2026-09-27 13:06:59,535 - INFO - URL: https://www.hirist.tech/jobs/fresher-jobs-chennai
+2026-09-27 13:06:59,692 - WARNING - -> Failed to fetch page
+2026-09-27 13:07:01,701 - INFO - 
+============================================================
+2026-09-27 13:07:01,701 - INFO - Scraping: Cutshort - Chennai Tech
+2026-09-27 13:07:01,701 - INFO - URL: https://cutshort.io/jobs/fresher-jobs-in-chennai
+2026-09-27 13:07:01,775 - WARNING - -> No job cards found
+2026-09-27 13:07:01,775 - INFO - -> Retrying...
+2026-09-27 13:07:03,787 - INFO - 
+============================================================
+2026-09-27 13:07:03,787 - INFO - Scraping: Cutshort - Chennai Tech
+2026-09-27 13:07:03,787 - INFO - URL: https://cutshort.io/jobs/fresher-jobs-in-chennai
+2026-09-27 13:07:03,827 - WARNING - -> No job cards found
+2026-09-27 13:07:05,841 - INFO - 
+============================================================
+2026-09-27 13:07:05,841 - INFO - Scraping: Instahyre - Chennai
+2026-09-27 13:07:05,841 - INFO - URL: https://www.instahyre.com/search-jobs/?location=Chennai&experience=0-1
+2026-09-27 13:07:06,009 - WARNING - -> No job cards found
+2026-09-27 13:07:06,009 - INFO - -> Retrying...
+2026-09-27 13:07:08,014 - INFO - 
+============================================================
+2026-09-27 13:07:08,014 - INFO - Scraping: Instahyre - Chennai
+2026-09-27 13:07:08,014 - INFO - URL: https://www.instahyre.com/search-jobs/?location=Chennai&experience=0-1
+2026-09-27 13:07:08,159 - WARNING - -> No job cards found
+2026-09-27 13:07:10,160 - INFO - 
+============================================================
+2026-09-27 13:07:10,160 - INFO - Scraping: Apna - Chennai
+2026-09-27 13:07:10,160 - INFO - URL: https://apna.co/jobs/chennai
+2026-09-27 13:07:10,420 - INFO - -> Trying with Selenium...
+2026-09-27 13:07:30,898 - WARNING - -> Failed to fetch page
+2026-09-27 13:07:30,898 - INFO - -> Retrying...
+2026-09-27 13:07:32,908 - INFO - 
+============================================================
+2026-09-27 13:07:32,908 - INFO - Scraping: Apna - Chennai
+2026-09-27 13:07:32,908 - INFO - URL: https://apna.co/jobs/chennai
+2026-09-27 13:07:33,024 - INFO - -> Trying with Selenium...
+2026-09-27 13:07:53,328 - WARNING - -> Failed to fetch page
+2026-09-27 13:07:55,346 - INFO - 
+======================================================================
+2026-09-27 13:07:55,346 - INFO - SCRAPING COMPLETE!
+2026-09-27 13:07:55,347 - INFO - ======================================================================
+2026-09-27 13:07:55,347 - INFO - Sources attempted: 14
+2026-09-27 13:07:55,347 - INFO - New jobs found: 70
+2026-09-27 13:07:55,347 - INFO - Total jobs in database: 70
+2026-09-27 13:07:55,347 - INFO - 
+Open dashboard.html to view all 70 Chennai fresher jobs!
+2026-09-27 13:07:55,347 - INFO - ======================================================================
+

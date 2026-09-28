@@ -1,0 +1,131 @@
+2026-09-27 12:34:36,869 - INFO - ============================================================
+2026-09-27 12:34:36,870 - INFO - Starting scraping cycle
+2026-09-27 12:34:36,870 - INFO - ============================================================
+2026-09-27 12:34:36,870 - INFO - Scraping: Naukri - Chennai Fresher Jobs
+2026-09-27 12:34:36,870 - INFO -   URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 12:43:47,423 - INFO - ============================================================
+2026-09-27 12:43:47,423 - INFO - Starting scraping cycle
+2026-09-27 12:43:47,423 - INFO - ============================================================
+2026-09-27 12:43:47,424 - INFO - Scraping: Freshersworld - Chennai Jobs
+2026-09-27 12:43:47,426 - INFO -   URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:43:51,391 - INFO -   Found 20 job cards with selector: div.job-container
+2026-09-27 12:44:11,457 - INFO - Scraping: Free Job Alert - Chennai
+2026-09-27 12:44:11,457 - INFO -   URL: https://www.freejobalert.com/search-jobs/jobs-in-chennai/
+2026-09-27 12:44:11,498 - WARNING -   Robots.txt disallows scraping: https://www.freejobalert.com/search-jobs/jobs-in-chennai/
+2026-09-27 12:44:31,507 - INFO - Scraping: Fresherslike - Tamil Nadu Jobs
+2026-09-27 12:44:31,507 - INFO -   URL: https://fresherslike.com/jobs-in-chennai/
+2026-09-27 12:44:34,553 - INFO -   Found 0 job cards with selector: div.job-card, article.listing, div.job-item
+2026-09-27 12:44:34,559 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:44:54,571 - INFO - Scraping: Jobanya - Chennai
+2026-09-27 12:44:54,571 - INFO -   URL: https://www.jobanya.com/jobs/chennai
+2026-09-27 12:44:55,367 - INFO -   Found 0 job cards with selector: div.job-card, div.job-item, article.job
+2026-09-27 12:44:55,369 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:45:15,383 - INFO - Scraping: Naukri - Chennai Fresher Jobs
+2026-09-27 12:45:15,383 - INFO -   URL: https://www.naukri.com/fresher-jobs-in-chennai
+2026-09-27 12:46:55,939 - INFO - ============================================================
+2026-09-27 12:46:55,939 - INFO - Starting scraping cycle
+2026-09-27 12:46:55,939 - INFO - ============================================================
+2026-09-27 12:46:55,939 - INFO - Scraping: Freshersworld - Chennai Jobs
+2026-09-27 12:46:55,939 - INFO -   URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:47:00,089 - INFO -   Found 20 job cards with selector: div.job-container
+2026-09-27 12:47:00,127 - INFO -   -> Extracted 0 valid Chennai fresher jobs from Freshersworld - Chennai Jobs
+2026-09-27 12:47:20,132 - INFO - Scraping: Free Job Alert - Chennai
+2026-09-27 12:47:20,132 - INFO -   URL: https://www.freejobalert.com/search-jobs/jobs-in-chennai/
+2026-09-27 12:47:20,181 - WARNING -   Robots.txt disallows scraping: https://www.freejobalert.com/search-jobs/jobs-in-chennai/
+2026-09-27 12:47:40,194 - INFO - Scraping: Fresherslike - Tamil Nadu Jobs
+2026-09-27 12:47:40,194 - INFO -   URL: https://fresherslike.com/jobs-in-chennai/
+2026-09-27 12:47:42,503 - INFO -   Found 0 job cards with selector: div.job-card, article.listing, div.job-item
+2026-09-27 12:47:42,507 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:48:02,517 - INFO - Scraping: Jobanya - Chennai
+2026-09-27 12:48:02,517 - INFO -   URL: https://www.jobanya.com/jobs/chennai
+2026-09-27 12:48:02,869 - INFO -   Found 0 job cards with selector: div.job-card, div.job-item, article.job
+2026-09-27 12:48:02,869 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:48:41,435 - INFO - ============================================================
+2026-09-27 12:48:41,435 - INFO - Starting scraping cycle
+2026-09-27 12:48:41,435 - INFO - ============================================================
+2026-09-27 12:48:41,435 - INFO - Scraping: Freshersworld - Chennai Jobs
+2026-09-27 12:48:41,435 - INFO -   URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:48:45,400 - INFO -   Found 20 job cards with selector: div.job-container
+2026-09-27 12:48:45,439 - INFO -   -> Extracted 0 valid Chennai fresher jobs from Freshersworld - Chennai Jobs
+2026-09-27 12:49:05,448 - INFO - Scraping: Fresherslike - Tamil Nadu Jobs
+2026-09-27 12:49:05,448 - INFO -   URL: https://fresherslike.com/jobs-in-chennai/
+2026-09-27 12:49:07,218 - INFO -   Found 0 job cards with selector: div.job-card, article.listing, div.job-item
+2026-09-27 12:49:07,231 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:49:27,241 - INFO - Scraping: Jobanya - Chennai
+2026-09-27 12:49:27,241 - INFO -   URL: https://www.jobanya.com/jobs/chennai
+2026-09-27 12:49:27,663 - INFO -   Found 0 job cards with selector: div.job-card, div.job-item, article.job
+2026-09-27 12:49:27,666 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:51:01,063 - INFO - ============================================================
+2026-09-27 12:51:01,063 - INFO - Starting scraping cycle
+2026-09-27 12:51:01,063 - INFO - ============================================================
+2026-09-27 12:51:01,063 - INFO - Scraping: Freshersworld - Chennai Jobs
+2026-09-27 12:51:01,063 - INFO -   URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:51:05,329 - INFO -   Found 20 job cards with selector: div.job-container
+2026-09-27 12:51:05,362 - INFO -   -> Extracted 19 valid Chennai fresher jobs from Freshersworld - Chennai Jobs
+2026-09-27 12:51:05,362 - INFO -   NEW JOB: ITI Technician - Chennai Jobs Opening in JEEVADITYA SOLAR POWER PRIVATE LIMITED at Tambaram, Chennai, TiruchirappalliLess at Unknown
+2026-09-27 12:51:05,362 - INFO -   NEW JOB: Telugu Telecaller-Fresher14K Inhand Perungudi Chennai Jobs Opening in Vishakan Placement Service 91 955 195 2508 at Medavakkam, Perungudi, Sholinganallur, ChennaiLess at Unknown
+2026-09-27 12:51:05,362 - INFO -   NEW JOB: Business Development Executive Jobs Opening in MAGWIL at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Telecallers Jobs Opening in Client of Teamlease at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Catalog Analyst Jobs Opening in Client of freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Software Engineer Jobs Opening in Leading MNC Company at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: 3D Animator Jobs Opening in Client of freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Project Technical Staff-III Jobs Opening in VIT University at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Graphic Designer Jobs Opening in A Client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,363 - INFO -   NEW JOB: Calibration Engineer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Application Support Engineer Jobs Opening in Client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Mechanical Service Engineer Jobs Opening in Keenmatics Corrugations Pvt Ltd. at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Social Media Intern Jobs Opening in Zingbus at Chennai-Others, Coimbatore-Others, Chennai, CoimbatoreLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Inside Sales Specialist Jobs Opening in A Client of freshrsworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Full-Stack Developer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Senior Engineer - Mobile App Developer Jobs Opening in Client of Freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Hardware/Service Engineer Jobs Opening in INZPIRE IOT SOLUTIONS PVT. LTD. at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Diploma Electrical Engineer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:51:05,364 - INFO -   NEW JOB: Jobs Opening in Ashok Leyland Limited at ChennaiLess at Unknown
+2026-09-27 12:51:25,377 - INFO - Scraping: Fresherslike - Tamil Nadu Jobs
+2026-09-27 12:51:25,377 - INFO -   URL: https://fresherslike.com/jobs-in-chennai/
+2026-09-27 12:51:28,114 - INFO -   Found 0 job cards with selector: div.job-card, article.listing, div.job-item
+2026-09-27 12:51:28,114 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:51:48,122 - INFO - Scraping: Jobanya - Chennai
+2026-09-27 12:51:48,123 - INFO -   URL: https://www.jobanya.com/jobs/chennai
+2026-09-27 12:51:48,373 - INFO -   Found 0 job cards with selector: div.job-card, div.job-item, article.job
+2026-09-27 12:51:48,376 - WARNING -   No job cards found. Page structure may have changed.
+2026-09-27 12:52:08,376 - INFO - Scraping: Drjobs India - Chennai
+2026-09-27 12:52:08,376 - INFO -   URL: https://www.drjobsindia.com/jobs-in-chennai
+2026-09-27 12:52:08,643 - ERROR - Request failed for https://www.drjobsindia.com/jobs-in-chennai: HTTPSConnectionPool(host='www.drjobsindia.com', port=443): Max retries exceeded with url: /jobs-in-chennai (Caused by NameResolutionError("HTTPSConnection(host='www.drjobsindia.com', port=443): Failed to resolve 'www.drjobsindia.com' ([Errno 11001] getaddrinfo failed)"))
+2026-09-27 12:52:08,644 - ERROR -   Failed to fetch page content
+2026-09-27 12:52:28,658 - INFO - Scraping: ClickJobs - Chennai
+2026-09-27 12:52:28,658 - INFO -   URL: https://www.clickjobs.in/jobs-in-chennai.html
+2026-09-27 12:52:28,691 - ERROR - Request failed for https://www.clickjobs.in/jobs-in-chennai.html: HTTPSConnectionPool(host='www.clickjobs.in', port=443): Max retries exceeded with url: /jobs-in-chennai.html (Caused by NameResolutionError("HTTPSConnection(host='www.clickjobs.in', port=443): Failed to resolve 'www.clickjobs.in' ([Errno 11001] getaddrinfo failed)"))
+2026-09-27 12:52:28,691 - ERROR -   Failed to fetch page content
+2026-09-27 12:53:40,291 - INFO - ============================================================
+2026-09-27 12:53:40,291 - INFO - Starting scraping cycle
+2026-09-27 12:53:40,291 - INFO - ============================================================
+2026-09-27 12:53:40,291 - INFO - Scraping: Freshersworld - Chennai Jobs
+2026-09-27 12:53:40,292 - INFO -   URL: https://www.freshersworld.com/jobs/jobsearch/chennai-jobs
+2026-09-27 12:53:44,689 - INFO -   Found 20 job cards with selector: div.job-container
+2026-09-27 12:53:44,710 - INFO -   -> Extracted 19 valid Chennai fresher jobs from Freshersworld - Chennai Jobs
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: ITI Technician - Chennai Jobs Opening in JEEVADITYA SOLAR POWER PRIVATE LIMITED at Tambaram, Chennai, TiruchirappalliLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Telugu Telecaller-Fresher14K Inhand Perungudi Chennai Jobs Opening in Vishakan Placement Service 91 955 195 2508 at Medavakkam, Perungudi, Sholinganallur, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Telecallers Jobs Opening in Client of Teamlease at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Business Development Executive Jobs Opening in MAGWIL at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: 3D Animator Jobs Opening in Client of freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Catalog Analyst Jobs Opening in Client of freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Software Engineer Jobs Opening in Leading MNC Company at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Project Technical Staff-III Jobs Opening in VIT University at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Graphic Designer Jobs Opening in A Client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Social Media Intern Jobs Opening in Zingbus at Chennai-Others, Coimbatore-Others, Chennai, CoimbatoreLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Inside Sales Specialist Jobs Opening in A Client of freshrsworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Calibration Engineer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Application Support Engineer Jobs Opening in Client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Mechanical Service Engineer Jobs Opening in Keenmatics Corrugations Pvt Ltd. at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Hardware/Service Engineer Jobs Opening in INZPIRE IOT SOLUTIONS PVT. LTD. at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Diploma Electrical Engineer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Full-Stack Developer Jobs Opening in A client of freshers world at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Senior Engineer - Mobile App Developer Jobs Opening in Client of Freshersworld at Chennai-Others, ChennaiLess at Unknown
+2026-09-27 12:53:44,710 - INFO -   NEW JOB: Jobs Opening in Ashok Leyland Limited at ChennaiLess at Unknown
+2026-09-27 12:54:04,722 - INFO - ============================================================
+2026-09-27 12:54:04,722 - INFO - Scraping cycle complete!
+2026-09-27 12:54:04,722 - INFO -   New jobs found: 19
+2026-09-27 12:54:04,723 - INFO -   Total jobs tracked: 19
+2026-09-27 12:54:04,723 - INFO -   Sources scraped: 1
+2026-09-27 12:54:04,723 - INFO - ============================================================

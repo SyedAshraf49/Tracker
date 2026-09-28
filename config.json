@@ -1,0 +1,76 @@
+{
+  "_comment": "Enhanced configuration for scraping fresher jobs from multiple career websites in Chennai",
+
+  "scraper_settings": {
+    "real_time_interval_minutes": 30,
+    "location_filter": "Chennai",
+    "max_experience_years": 1,
+    "use_selenium_for_dynamic_sites": true,
+    "headless_browser": true,
+    "request_timeout": 20,
+    "retry_attempts": 3
+  },
+
+  "fresher_keywords": [
+    "fresher", "freshers", "entry level", "entry-level", "graduate trainee",
+    "campus hire", "trainee", "associate engineer", "0-1 year", "0-1 years",
+    "0-2 years", "junior", "new grad", "graduate engineer", "recent graduate",
+    "walk-in", "walkin", "BE/B.Tech", "MCA", "BCA", "B.Sc", "graduate"
+  ],
+
+  "location_keywords": [
+    "chennai", "madras", "tamil nadu", "tamilnadu", "tn"
+  ],
+
+  "sources": [
+    {
+      "name": "Freshersworld - Chennai Jobs",
+      "enabled": true,
+      "type": "aggregator",
+      "url": "https://www.freshersworld.com/jobs/jobsearch/chennai-jobs",
+      "requires_selenium": false,
+      "job_card_selector": "div.job-container",
+      "title_selector": "span.wrap-title, span.seo_title, div.job-new-title",
+      "company_selector": "h3.latest-jobs-company, div.company, span.company-name",
+      "link_selector": "div.job-container",
+      "link_attr": "job_display_url",
+      "link_base": "",
+      "location_selector": "a.bold_font, span.location",
+      "already_filtered_for_freshers": true,
+      "notes": "Dedicated fresher job portal - WORKING ✓"
+    },
+    {
+      "name": "Naukri - Chennai Fresher Jobs",
+      "enabled": false,
+      "type": "aggregator",
+      "url": "https://www.naukri.com/fresher-jobs-in-chennai",
+      "requires_selenium": true,
+      "job_card_selector": "article.jobTuple",
+      "title_selector": "a.title",
+      "company_selector": "a.subTitle",
+      "link_selector": "a.title",
+      "link_attr": "href",
+      "link_base": "https://www.naukri.com",
+      "location_selector": "li.location",
+      "experience_selector": "li.experience",
+      "already_filtered_for_freshers": true,
+      "notes": "Naukri - Requires Selenium (enable if needed)"
+    },
+    {
+      "name": "Internshala - Chennai Jobs",
+      "enabled": false,
+      "type": "aggregator",
+      "url": "https://internshala.com/jobs/fresher-jobs-in-chennai/",
+      "requires_selenium": true,
+      "job_card_selector": "div.individual_internship",
+      "title_selector": "div.job-internship-name",
+      "company_selector": "p.company-name",
+      "link_selector": "div.heading_4_5 a",
+      "link_attr": "href",
+      "link_base": "https://internshala.com",
+      "location_selector": "div.location_link",
+      "already_filtered_for_freshers": true,
+      "notes": "Internshala - Requires Selenium (enable if needed)"
+    }
+  ]
+}
