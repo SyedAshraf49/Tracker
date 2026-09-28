@@ -100,11 +100,19 @@ class JobScraper:
     def __init__(self, config_path: Path = CONFIG_PATH):
         self.config = load_json(config_path, {}); self.db = load_json(DB_PATH, {}); self.source_health = []
         self.session = requests.Session(); self.session.headers.update(HEADERS)
+        self.last_fetch_retryable = True
     def fetch(self, url: str):
         timeout = int(self.config.get('scraper_settings', {}).get('request_timeout', 20))
+        self.last_fetch_retryable = True
         try:
             response = self.session.get(url, timeout=timeout); response.raise_for_status(); return BeautifulSoup(response.text, 'lxml'), 'ok'
-        except requests.RequestException as exc: return None, clean(exc)
+        except requests.RequestException as exc:
+            status = getattr(getattr(exc, 'response', None), 'status_code', None)
+            # 401/403/404/410 are terminal for this URL. Retrying them only
+            # slows Render builds and creates noisy logs; 429 and 5xx remain retryable.
+            if status in {401, 403, 404, 410}:
+                self.last_fetch_retryable = False
+            return None, clean(exc)
     def scrape_source(self, source: dict) -> list[dict]:
         url = source['url']
         if not robots_allows(url): self.source_health.append({'name': source['name'], 'status': 'blocked by robots.txt', 'jobs': 0}); return []
@@ -144,7 +152,7 @@ class JobScraper:
             jobs = []
             for attempt in range(int(settings.get('retry_attempts', 2))):
                 jobs = self.scrape_source(source)
-                if jobs or attempt == int(settings.get('retry_attempts', 2)) - 1: break
+                if jobs or not self.last_fetch_retryable or attempt == int(settings.get('retry_attempts', 2)) - 1: break
                 time.sleep(1.5 * (attempt + 1))
             for job in jobs:
                 if not self.qualifies(job): continue

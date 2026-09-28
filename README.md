@@ -53,3 +53,7 @@ The repository includes [`render.yaml`](render.yaml) and `render-build.sh` for a
 - The dashboard is a static snapshot; to refresh it, trigger a new deploy or run the scraper locally and push the generated data.
 
 In Render, choose **New → Blueprint**, select `SyedAshraf49/Tracker`, and apply the Blueprint. Render will read the committed `render.yaml` automatically.
+
+### Source policy
+
+Some large portals reject automated access in the Render build environment with robots rules or HTTP 403/404 responses. Those sources remain documented in `config.json` with their selectors, but are disabled by default so deploys stay fast and reliable. The scraper now treats permanent 401/403/404/410 responses as terminal and only retries transient failures such as timeouts, 429, and 5xx responses. Re-enable a source only after confirming its current terms and public page behavior.

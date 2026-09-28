@@ -1,6 +1,6 @@
 const JOBS_DATA = {
   "generated_at": "2026-09-28",
-  "generated_timestamp": "2026-09-28 07:09:05",
+  "generated_timestamp": "2026-09-28 07:44:04",
   "all_jobs": [
     {
       "company": "A Client of Freshersworld",
@@ -1812,7 +1812,7 @@ const JOBS_DATA = {
     }
   ],
   "today_count": 37,
-  "new_this_cycle": 39,
+  "new_this_cycle": 2,
   "total_jobs": 107,
   "software_jobs": 18,
   "category_counts": {
@@ -1841,39 +1841,11 @@ const JOBS_DATA = {
       "selector": "div.job-container"
     },
     {
-      "name": "LinkedIn · No experience software",
-      "status": "blocked by robots.txt",
-      "jobs": 0
-    },
-    {
-      "name": "Indeed · Entry-level software",
-      "status": "request failed",
-      "jobs": 0,
-      "detail": "403 Client Error: Forbidden for url: https://in.indeed.com/q-entry-level-software-l-chennai,-tamil-nadu-jobs.html"
-    },
-    {
-      "name": "Naukri · Fresher software engineering",
-      "status": "blocked by robots.txt",
-      "jobs": 0
-    },
-    {
       "name": "Internshala · Software development",
       "status": "working",
       "jobs": 0,
       "selector": "div.individual_internship"
-    },
-    {
-      "name": "Foundit · Fresher Chennai",
-      "status": "request failed",
-      "jobs": 0,
-      "detail": "404 Client Error: Not Found for url: https://www.foundit.in/srp/fresher-jobs-in-chennai"
-    },
-    {
-      "name": "Shine · Fresher Chennai",
-      "status": "request failed",
-      "jobs": 0,
-      "detail": "403 Client Error: Forbidden for url: https://www.shine.com/job-search/fresher-jobs-in-chennai"
     }
   ],
-  "sources_configured": 8
+  "sources_configured": 3
 };

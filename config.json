@@ -40,7 +40,7 @@
     },
     {
       "name": "LinkedIn · No experience software",
-      "enabled": true,
+      "enabled": false,
       "url": "https://in.linkedin.com/jobs/no-experience-software-jobs-chennai",
       "job_card_selector": "div.base-card, div.job-search-card, li.jobs-search-results__list-item",
       "title_selector": "h3.base-search-card__title, a.job-card-list__title, h3",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Indeed · Entry-level software",
-      "enabled": true,
+      "enabled": false,
       "url": "https://in.indeed.com/q-entry-level-software-l-chennai,-tamil-nadu-jobs.html",
       "job_card_selector": "div.job_seen_beacon, td.resultContent",
       "title_selector": "h2.jobTitle span, h2.jobTitle",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Naukri · Fresher software engineering",
-      "enabled": true,
+      "enabled": false,
       "url": "https://www.naukri.com/fresher-software-engineering-jobs-in-chennai",
       "job_card_selector": "article.jobTuple, div.jobTuple",
       "title_selector": "a.title, div.title",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Foundit · Fresher Chennai",
-      "enabled": true,
+      "enabled": false,
       "url": "https://www.foundit.in/srp/fresher-jobs-in-chennai",
       "job_card_selector": "div.jobTuple, article.job-card, div.card-body",
       "title_selector": "a.job-title, h2 a",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Shine · Fresher Chennai",
-      "enabled": true,
+      "enabled": false,
       "url": "https://www.shine.com/job-search/fresher-jobs-in-chennai",
       "job_card_selector": "li.jCard, div.jobCard_root",
       "title_selector": "a.jobTitle, h2 a",
