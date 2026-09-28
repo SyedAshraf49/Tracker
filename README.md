@@ -54,6 +54,14 @@ The repository includes [`render.yaml`](render.yaml) and `render-build.sh` for a
 
 In Render, choose **New → Blueprint**, select `SyedAshraf49/Tracker`, and apply the Blueprint. Render will read the committed `render.yaml` automatically.
 
+If you create a **Web Service** manually instead of using the Blueprint, use this start command so Render serves the published dashboard rather than the repository directory:
+
+```bash
+python3 -m http.server $PORT --bind 0.0.0.0 --directory dist
+```
+
+The root `index.html` is also included as a safe fallback for services that are still pointed at the repository root.
+
 ### Source policy
 
 Some large portals reject automated access in the Render build environment with robots rules or HTTP 403/404 responses. Those sources remain documented in `config.json` with their selectors, but are disabled by default so deploys stay fast and reliable. The scraper now treats permanent 401/403/404/410 responses as terminal and only retries transient failures such as timeouts, 429, and 5xx responses. Re-enable a source only after confirming its current terms and public page behavior.
