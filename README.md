@@ -42,3 +42,14 @@ Useful settings:
 ## Current live run
 
 The expanded configuration was tested on 28 September 2026 and added **37 Chennai qualifying roles** to the cleaned history of **107 jobs**. Freshersworld returned jobs successfully in the sandbox. LinkedIn was blocked by robots.txt, while Indeed, Naukri, Foundit, and Shine returned access/markup errors; those states are exposed by the dashboard source-health panel rather than presented as successful coverage.
+
+## Deploy on Render
+
+The repository includes [`render.yaml`](render.yaml) and `render-build.sh` for a Render Blueprint static-site deploy.
+
+- Render uses the free static-site plan.
+- Each deploy installs the Python dependencies, runs one scraper cycle, and publishes only `dashboard.html` and `dashboard_data.js` from `dist/`.
+- Scraper source code, configuration, logs, and the job database are not exposed by the deployed site.
+- The dashboard is a static snapshot; to refresh it, trigger a new deploy or run the scraper locally and push the generated data.
+
+In Render, choose **New → Blueprint**, select `SyedAshraf49/Tracker`, and apply the Blueprint. Render will read the committed `render.yaml` automatically.
