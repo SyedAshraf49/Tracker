@@ -1,6 +1,6 @@
 const JOBS_DATA = {
   "generated_at": "2026-09-28",
-  "generated_timestamp": "2026-09-28 07:44:04",
+  "generated_timestamp": "2026-09-28 07:53:18",
   "all_jobs": [
     {
       "company": "A Client of Freshersworld",
@@ -23,7 +23,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of freshersworld",
@@ -44,7 +46,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BE/B.Tech Apply to Software Engineer Jobs in A client of freshersw... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "TURN 5 TECH HR SOLUTION 91 74488 61717",
@@ -64,7 +68,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "TURN5TECH HR SOLUTION 91 74488 61717",
@@ -84,7 +90,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unibros Technologies",
@@ -102,7 +110,9 @@ const JOBS_DATA = {
         "software",
         "trainee"
       ],
-      "is_software_role": true
+      "is_software_role": true,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client of freshers world",
@@ -123,7 +133,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BE/B.Tech Apply to Application Support Engineer Jobs in Client of ... Posted: 29 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of freshers world",
@@ -144,7 +156,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -165,7 +179,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BCA , BE/B.Tech , BSc Apply to Sr. Python Developer Jobs in A Client of Freshe... Posted: 26 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -186,7 +202,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -207,7 +225,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of freshersworld",
@@ -228,7 +248,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BCA , BE/B.Tech Apply to Web Developer Jobs in ... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -249,7 +271,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -268,7 +292,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": true
+      "is_software_role": true,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -287,7 +313,9 @@ const JOBS_DATA = {
         "freshers",
         "full-stack"
       ],
-      "is_software_role": true
+      "is_software_role": true,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "SQ1 Security",
@@ -306,7 +334,9 @@ const JOBS_DATA = {
         "graduate engineer",
         "trainee"
       ],
-      "is_software_role": true
+      "is_software_role": true,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "CADFEM APAC",
@@ -325,7 +355,9 @@ const JOBS_DATA = {
         "graduate engineer",
         "trainee"
       ],
-      "is_software_role": true
+      "is_software_role": true,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of teamlease",
@@ -344,7 +376,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BE/B.Tech Apply to Software Engineer Jobs in ... Posted: 28 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -365,7 +399,9 @@ const JOBS_DATA = {
       "is_software_role": true,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BE/B.Tech Apply to Developer Trainee Jobs in A Client of Freshersw... Posted: 28 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of freshers world",
@@ -385,7 +421,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of freshers world",
@@ -405,7 +443,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed Diploma Apply to Diploma Electrical Engineer Jobs in A client of... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client Of Freshersworld",
@@ -425,7 +465,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BCA , BE/B.Tech Apply to Azure .Net Core Developer Jobs in Client Of Fre... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -445,7 +487,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -463,7 +507,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -481,7 +527,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A client of teamlease",
@@ -500,7 +548,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BE/B.Tech , BSc Apply to Data Engineer Jobs in , Ch... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "Flexwork",
@@ -518,7 +568,9 @@ const JOBS_DATA = {
         "freshers",
         "walk-in"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "CogNet",
@@ -536,7 +588,30 @@ const JOBS_DATA = {
         "freshers",
         "trainee"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
+    },
+    {
+      "company": "INZPIRE IOT SOLUTIONS PVT. LTD.",
+      "title": "Hardware/Service Engineer Jobs Opening in INZPIRE IOT SOLUTIONS PVT. LTD. at Chennai-Others, Chennai Less",
+      "link": "https://www.freshersworld.com/jobs/hardware-service-engineer-jobs-opening-in-inzpire-iot-solutions-pvt-ltd-at-chennai-others-chennai-2952544",
+      "location": "Chennai",
+      "experience": "Fresher / entry level",
+      "description": "",
+      "source": "Freshersworld · Chennai",
+      "category": "Data & AI",
+      "software_score": 30,
+      "matched_terms": [
+        "engineer",
+        "walkin"
+      ],
+      "is_software_role": false,
+      "first_seen": "2026-09-28",
+      "first_seen_time": "2026-09-28 07:09:05",
+      "last_seen": "2026-09-28",
+      "initial_jd": "Walkin More Less 0 to 1 Years 15000 Monthly Diploma , BE/B.Tech , Vocational Training 28 September 2026 Apply for the latest Hardware/Service... Posted: 6 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "Eppendorf",
@@ -553,7 +628,9 @@ const JOBS_DATA = {
         "apprentice",
         "engineer"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Colan Infotech Private Limited",
@@ -570,7 +647,9 @@ const JOBS_DATA = {
         "developer",
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Vertiv",
@@ -587,7 +666,9 @@ const JOBS_DATA = {
         "engineer",
         "trainee"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client of Freshersworld",
@@ -608,7 +689,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -627,7 +710,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client of freshersworld",
@@ -646,7 +731,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client of freshersworld",
@@ -665,7 +752,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed Any Graduate Apply to Catalog Analyst Jobs in ... Posted: 26 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of freshers world",
@@ -684,7 +773,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -701,7 +792,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -718,7 +811,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -735,7 +830,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "R1 RCM",
@@ -752,7 +849,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Metayb",
@@ -769,7 +868,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Soffit Infrastructure Services (P) Ltd",
@@ -786,7 +887,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "ELIXIR Global",
@@ -803,7 +906,9 @@ const JOBS_DATA = {
         "fresher",
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Medical Billing Unlimited | A Coronis Health Company",
@@ -820,7 +925,9 @@ const JOBS_DATA = {
         "fresher",
         "freshers"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Leading MNC Company",
@@ -839,7 +946,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -856,7 +965,9 @@ const JOBS_DATA = {
         "engineer",
         "software"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "MAGWIL",
@@ -874,7 +985,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years 15000 - 50000 Monthly B.Arch , Certificate Course (ITI) , Diploma , B.Com , B.Pharm , BA , BBA/BBM , BCA ... 28 September 2026 Apply for the latest Business Develop... Posted: 1 months ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "Keenmatics Corrugations Pvt Ltd.",
@@ -892,25 +1005,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
-    },
-    {
-      "company": "INZPIRE IOT SOLUTIONS PVT. LTD.",
-      "title": "Hardware/Service Engineer Jobs Opening in INZPIRE IOT SOLUTIONS PVT. LTD. at Chennai-Others, Chennai Less",
-      "link": "https://www.freshersworld.com/jobs/hardware-service-engineer-jobs-opening-in-inzpire-iot-solutions-pvt-ltd-at-chennai-others-chennai-2952544",
-      "location": "Chennai",
-      "experience": "Fresher / entry level",
-      "description": "",
-      "source": "Freshersworld · Chennai",
-      "category": "Data & AI",
-      "software_score": 18,
-      "matched_terms": [
-        "engineer"
-      ],
-      "is_software_role": false,
-      "first_seen": "2026-09-28",
-      "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Beeja Ai Solutions Private Limited",
@@ -928,7 +1025,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "MAGWIL",
@@ -944,7 +1043,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "development"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -960,7 +1061,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "engineer"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "INZPIRE IOT SOLUTIONS PVT. LTD.",
@@ -976,7 +1079,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "engineer"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "CADD Centre Chennai",
@@ -992,7 +1097,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "engineer"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Green Komet- Bridging Professional",
@@ -1008,7 +1115,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "developer"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Vishakan Placement Service 91 955 195 2508",
@@ -1026,7 +1135,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Zingbus",
@@ -1044,7 +1155,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "HOT JOB More Less , Coimbatore 0 Years 12000 - 14000 Monthly LLM , B.Arch , Certificate Course (ITI) , Diploma , M Phil / Ph.D , B.Com , B.Pharm , BA ... 28 September 2026 Apply for the latest Social Media Int... Posted: 1 months ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -1060,7 +1173,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "fresher"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Zingbus",
@@ -1076,7 +1191,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "intern"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Dreamscribe Brands",
@@ -1092,7 +1209,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "fresher"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Momentive",
@@ -1108,7 +1227,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Coronis Ajuba",
@@ -1124,7 +1245,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "trainee"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "AUSTRA RCM PRIVATE LIMITED",
@@ -1140,7 +1263,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "intern"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Flex",
@@ -1156,7 +1281,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Guidehouse",
@@ -1172,7 +1299,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Kemin Industries",
@@ -1188,7 +1317,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "trainee"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Sutherland",
@@ -1204,7 +1335,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "intern"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -1224,7 +1357,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed BCA , BE/B.Tech , BSc Apply to Senior Test Automation Engineer Jobs in A Clien... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -1244,7 +1379,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of Freshersworld",
@@ -1264,6 +1401,26 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
+    },
+    {
+      "company": "Ashok Leyland Limited",
+      "title": "Jobs Opening in Ashok Leyland Limited at Chennai Less",
+      "link": "https://www.freshersworld.com/jobs/naps-in-chennai-for-ashok-leyland-limited-2852604",
+      "location": "Chennai",
+      "experience": "Fresher / entry level",
+      "description": "FEATURED JOB More Less This role is deployed through TeamLease to our client organization. 0 Years 16000 - 20000 Monthly Certificate Course (ITI) , Diploma , Machine Operator_Plastic Injection Moulding V1 invited new job notification 04/03... Posted: 6 months ago Save View & Apply",
+      "initial_jd": "FEATURED JOB More Less This role is deployed through TeamLease to our client organization. 0 Years 16000 - 20000 Monthly Certificate Course (ITI) , Diploma , Machine Operator_Plastic Injection Moulding V1 invited new job notification 04/03... Posted: 6 months ago Save View & Apply",
+      "date_posted": "Not provided",
+      "source": "Freshersworld · Chennai",
+      "category": "Data & AI",
+      "software_score": 0,
+      "matched_terms": [],
+      "is_software_role": false,
+      "first_seen": "2026-09-28",
+      "first_seen_time": "2026-09-28 07:53:18",
       "last_seen": "2026-09-28"
     },
     {
@@ -1280,7 +1437,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Client of Teamlease",
@@ -1296,7 +1455,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 0 Years Salary not disclosed Any Graduate Apply to Telecallers Jobs in , Chenna... Posted: 27 days ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "VIT University",
@@ -1312,7 +1473,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "More Less 1 Years 33300 Monthly ME/M.Tech (Electronics, Bio-Medical /Bio-Technology Engg, CSE ... ) 28 September 2026 Apply for the latest Project Technica... Posted: 1 months ago Save View & Apply",
+      "date_posted": "Not provided"
     },
     {
       "company": "A Client of freshrsworld",
@@ -1328,7 +1491,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Wheels India Limited",
@@ -1344,7 +1509,9 @@ const JOBS_DATA = {
       "is_software_role": false,
       "first_seen": "2026-09-28",
       "first_seen_time": "2026-09-28 07:09:05",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-28",
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "JEEVADITYA SOLAR POWER PRIVATE LIMITED",
@@ -1358,7 +1525,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -1372,7 +1541,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -1386,7 +1557,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -1400,7 +1573,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Unknown",
@@ -1414,7 +1589,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Accenture in India",
@@ -1428,7 +1605,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Rockwell Automation",
@@ -1442,7 +1621,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Accenture in India",
@@ -1456,7 +1637,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Sankar Infraprojects (P) Ltd",
@@ -1470,7 +1653,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Justo Global",
@@ -1484,7 +1669,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Expleo Group",
@@ -1498,7 +1685,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Harris Computer",
@@ -1512,7 +1701,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "CRUX",
@@ -1526,7 +1717,9 @@ const JOBS_DATA = {
       "category": "IT support",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Emerson",
@@ -1540,7 +1733,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Origin Nutrition",
@@ -1554,7 +1749,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Rentokil Initial",
@@ -1568,7 +1765,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "DATAMARK, Inc.",
@@ -1582,7 +1781,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "IBM",
@@ -1596,7 +1797,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "EY",
@@ -1610,7 +1813,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Rentokil Initial",
@@ -1624,7 +1829,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Sutherland",
@@ -1638,7 +1845,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Arkie Atelier Design India [P] Ltd",
@@ -1652,7 +1861,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Green Komet- Bridging Professional",
@@ -1666,7 +1877,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Citi",
@@ -1680,7 +1893,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "3Ding",
@@ -1694,7 +1909,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Pullman Hotels & Resorts",
@@ -1708,7 +1925,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Sankar Infraprojects (P) Ltd",
@@ -1722,7 +1941,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Citi",
@@ -1736,7 +1957,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Capital Honda",
@@ -1750,7 +1973,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Flex",
@@ -1764,7 +1989,9 @@ const JOBS_DATA = {
       "category": "Data & AI",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Experienzing",
@@ -1778,7 +2005,9 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "MAN & SOIL BUILDERS PRIVATE LIMITED",
@@ -1794,7 +2023,9 @@ const JOBS_DATA = {
       "matched_terms": [
         "junior"
       ],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     },
     {
       "company": "Mounee Consulting Services Private Limited",
@@ -1808,23 +2039,25 @@ const JOBS_DATA = {
       "category": "Other early career",
       "software_score": 0,
       "matched_terms": [],
-      "is_software_role": false
+      "is_software_role": false,
+      "initial_jd": "Initial job description was not captured; open the original listing for details.",
+      "date_posted": "Not provided"
     }
   ],
-  "today_count": 37,
-  "new_this_cycle": 2,
-  "total_jobs": 107,
+  "today_count": 38,
+  "new_this_cycle": 3,
+  "total_jobs": 108,
   "software_jobs": 18,
   "category_counts": {
     "Software development": 18,
-    "Data & AI": 55,
+    "Data & AI": 56,
     "Other early career": 32,
     "IT support": 2
   },
   "source_counts": {
     "Freshersworld · Software Chennai": 18,
     "LinkedIn - Chennai Entry Level": 50,
-    "Freshersworld · Chennai": 19,
+    "Freshersworld · Chennai": 20,
     "Freshersworld - Chennai": 20
   },
   "source_health": [

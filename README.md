@@ -62,6 +62,10 @@ python3 -m http.server $PORT --bind 0.0.0.0 --directory dist
 
 The root `index.html` is also included as a safe fallback for services that are still pointed at the repository root.
 
+## Dashboard UI
+
+The dashboard is intentionally dark and compact. Each listing shows only the requested essentials: **company**, **role**, an **initial JD snapshot**, **date posted** when supplied by the source, the original **link**, and **where it was scraped from**. Fit percentages are not displayed.
+
 ### Source policy
 
 Some large portals reject automated access in the Render build environment with robots rules or HTTP 403/404 responses. Those sources remain documented in `config.json` with their selectors, but are disabled by default so deploys stay fast and reliable. The scraper now treats permanent 401/403/404/410 responses as terminal and only retries transient failures such as timeouts, 429, and 5xx responses. Re-enable a source only after confirming its current terms and public page behavior.

@@ -69,6 +69,20 @@ def first_text(card: Any, selectors: str) -> str:
             if value: return value
     return ''
 
+def extract_date_posted(card: Any, source: dict) -> str:
+    explicit = first_text(card, source.get('date_selector', ''))
+    if explicit:
+        return explicit
+    text = clean(card.get_text(' ', strip=True))
+    patterns = [
+        r'(?i)(?:date posted|posted|published)(?: on)?\s*[:\-]?\s*((?:today|yesterday|\d+\s+days?\s+ago|\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|[A-Za-z]{3,9}\s+\d{1,2}(?:,\s*|\s+)\d{4}|\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4}))',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text)
+        if match:
+            return clean(match.group(1))
+    return 'Not provided'
+
 def first_link(card: Any, source: dict, page_url: str) -> str:
     attr = source.get('link_attr', 'href')
     if source.get('link_on') == 'card': raw = card.get(attr, '')
@@ -90,7 +104,8 @@ def jsonld_jobs(soup: BeautifulSoup, source: dict) -> list[dict]:
             location = record.get('jobLocation', {}); location = location[0] if isinstance(location, list) and location else location
             address = location.get('address', {}) if isinstance(location, dict) else {}
             loc = clean(' '.join(str(address.get(k, '')) for k in ('addressLocality','addressRegion','addressCountry'))) if isinstance(address, dict) else clean(location)
-            found.append({'company': clean((record.get('hiringOrganization') or {}).get('name', 'Unknown')), 'title': clean(record.get('title')), 'link': clean(record.get('url')) or source['url'], 'location': loc, 'experience': clean(record.get('experienceRequirements')), 'description': BeautifulSoup(clean(record.get('description')), 'lxml').get_text(' ', strip=True)[:600], 'source': source['name']})
+            description = BeautifulSoup(clean(record.get('description')), 'lxml').get_text(' ', strip=True)[:900]
+            found.append({'company': clean((record.get('hiringOrganization') or {}).get('name', 'Unknown')), 'title': clean(record.get('title')), 'link': clean(record.get('url')) or source['url'], 'location': loc, 'experience': clean(record.get('experienceRequirements')), 'description': description, 'initial_jd': description or 'Initial job description was not captured; open the original listing for details.', 'date_posted': clean(record.get('datePosted')) or 'Not provided', 'source': source['name']})
     return found
 
 def source_is_prefiltered(job: dict, config: dict) -> bool:
@@ -133,8 +148,14 @@ class JobScraper:
                 if match: company = clean(match.group(1))
             location, experience = first_text(card, source.get('location_selector','')), first_text(card, source.get('experience_selector',''))
             description = first_text(card, source.get('description_selector',''))
+            if not description:
+                card_text = clean(card.get_text(' ', strip=True))
+                for fragment in (title, company, location, experience):
+                    if fragment: card_text = card_text.replace(fragment, ' ')
+                description = clean(card_text)[:900]
+            date_posted = extract_date_posted(card, source)
             if source.get('already_filtered_for_freshers'): experience = experience or 'Fresher / entry level'
-            results.append({'company': company, 'title': title, 'link': first_link(card, source, url), 'location': location or 'Chennai', 'experience': experience or 'Early career', 'description': description, 'source': source['name']})
+            results.append({'company': company, 'title': title, 'link': first_link(card, source, url), 'location': location or 'Chennai', 'experience': experience or 'Early career', 'description': description, 'initial_jd': description or 'Initial job description was not captured; open the original listing for details.', 'date_posted': date_posted, 'source': source['name']})
         if not results: results = jsonld_jobs(soup, source)
         status = 'working' if results or cards else 'reachable, no cards matched'
         self.source_health.append({'name': source['name'], 'status': status, 'jobs': len(results), 'selector': working_selector}); logger.info('%s: %d jobs (%s)', source['name'], len(results), status)
@@ -157,7 +178,10 @@ class JobScraper:
             for job in jobs:
                 if not self.qualifies(job): continue
                 key = job_id(job)
-                if key in self.db: self.db[key].update({'last_seen': today, 'category': job['category'], 'software_score': job['software_score'], 'is_software_role': job['is_software_role'], 'matched_terms': job['matched_terms']})
+                if key in self.db:
+                    self.db[key].update({'last_seen': today, 'category': job['category'], 'software_score': job['software_score'], 'is_software_role': job['is_software_role'], 'matched_terms': job['matched_terms']})
+                    if job.get('initial_jd'): self.db[key]['initial_jd'] = job['initial_jd']
+                    if job.get('date_posted') and job['date_posted'] != 'Not provided': self.db[key]['date_posted'] = job['date_posted']
                 else: job.update({'first_seen': today, 'first_seen_time': timestamp, 'last_seen': today}); self.db[key] = job; new_jobs += 1
             time.sleep(float(settings.get('source_delay_seconds', 1.5)))
         self.write_outputs(today, timestamp, new_jobs, len(enabled)); return {'new': new_jobs, 'total': len(self.db), 'sources_scraped': len(enabled), 'source_health': self.source_health}
@@ -168,6 +192,8 @@ class JobScraper:
         for job in jobs:
             if 'software_score' not in job:
                 category, score, matched = classify_job(job.get('title',''), job.get('description','')); job.update({'category': category, 'software_score': score, 'matched_terms': matched, 'is_software_role': score >= 45})
+            if not job.get('initial_jd'): job['initial_jd'] = clean(job.get('description')) or 'Initial job description was not captured; open the original listing for details.'
+            if not job.get('date_posted'): job['date_posted'] = 'Not provided'
         jobs.sort(key=lambda item: (item.get('software_score', 0), item.get('first_seen_time', '')), reverse=True); category_counts, source_counts = {}, {}
         for job in jobs:
             category_counts[job.get('category','Other early career')] = category_counts.get(job.get('category','Other early career'), 0) + 1; source_counts[job.get('source','Unknown')] = source_counts.get(job.get('source','Unknown'), 0) + 1
