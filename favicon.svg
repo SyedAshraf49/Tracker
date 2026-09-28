@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect width="64" height="64" rx="16" fill="#05070b"/><path d="M15 18h34v8H23v7h21v8H23v7h26v8H15z" fill="#79a7ff"/><path d="M15 18h8v38h-8z" fill="#67d9e8"/>
+  <rect width="64" height="64" rx="15" fill="#05070b"/>
+  <text x="7" y="45" fill="#67d9e8" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="900">J</text>
+  <text x="29" y="45" fill="#79a7ff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="900">D</text>
 </svg>
