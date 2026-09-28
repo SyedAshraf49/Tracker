@@ -129,3 +129,15 @@
 2026-09-27 12:54:04,723 - INFO -   Total jobs tracked: 19
 2026-09-27 12:54:04,723 - INFO -   Sources scraped: 1
 2026-09-27 12:54:04,723 - INFO - ============================================================
+2026-09-28 07:09:20,383 - INFO - Freshersworld · Chennai: 20 jobs (working)
+2026-09-28 07:09:30,511 - INFO - Freshersworld · Software Chennai: 20 jobs (working)
+2026-09-28 07:09:55,274 - WARNING - Indeed · Entry-level software: 403 Client Error: Forbidden for url: https://in.indeed.com/q-entry-level-software-l-chennai,-tamil-nadu-jobs.html
+2026-09-28 07:10:05,463 - WARNING - Indeed · Entry-level software: 403 Client Error: Forbidden for url: https://in.indeed.com/q-entry-level-software-l-chennai,-tamil-nadu-jobs.html
+2026-09-28 07:13:31,288 - WARNING - Could not check robots.txt for https://www.naukri.com/fresher-software-engineering-jobs-in-chennai: Remote end closed connection without response
+2026-09-28 07:13:35,943 - WARNING - Naukri · Fresher software engineering: 403 Client Error: Forbidden for url: https://www.naukri.com/fresher-software-engineering-jobs-in-chennai
+2026-09-28 07:14:23,015 - WARNING - Internshala · Software development: HTTPSConnectionPool(host='internshala.com', port=443): Read timed out.
+2026-09-28 07:14:36,209 - INFO - Internshala · Software development: 0 jobs (working)
+2026-09-28 07:14:44,866 - WARNING - Foundit · Fresher Chennai: 404 Client Error: Not Found for url: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-28 07:14:51,123 - WARNING - Foundit · Fresher Chennai: 404 Client Error: Not Found for url: https://www.foundit.in/srp/fresher-jobs-in-chennai
+2026-09-28 07:14:59,233 - WARNING - Shine · Fresher Chennai: 403 Client Error: Forbidden for url: https://www.shine.com/job-search/fresher-jobs-in-chennai
+2026-09-28 07:15:07,741 - WARNING - Shine · Fresher Chennai: 403 Client Error: Forbidden for url: https://www.shine.com/job-search/fresher-jobs-in-chennai

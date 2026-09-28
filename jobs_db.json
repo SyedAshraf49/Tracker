@@ -7,7 +7,11 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "d0ecc1cf35327eb8e7f3a2935ba9255f": {
     "company": "Unknown",
@@ -17,7 +21,13 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "fresher"
+    ],
+    "is_software_role": false
   },
   "b0b36bb61a9b9abac7f91878ddbe500f": {
     "company": "Flexwork",
@@ -27,7 +37,15 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 36,
+    "matched_terms": [
+      "fresher",
+      "freshers",
+      "walk-in"
+    ],
+    "is_software_role": false
   },
   "5f0bc2d79192e6a1d5e14944ddf046ad": {
     "company": "Unknown",
@@ -37,7 +55,11 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "24966d821466ff32c91eddd08be7045b": {
     "company": "MAGWIL",
@@ -47,7 +69,13 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "development"
+    ],
+    "is_software_role": false
   },
   "80fb1baefd003c13f7cd5a0da5721420": {
     "company": "Unknown",
@@ -57,7 +85,14 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "022ae00a467bf73b3db0b68427e2136e": {
     "company": "Unknown",
@@ -67,7 +102,14 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "14f12ec97b47a927d46dc3a000ffb706": {
     "company": "Unknown",
@@ -77,7 +119,14 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 23,
+    "matched_terms": [
+      "engineer",
+      "software"
+    ],
+    "is_software_role": false
   },
   "c96c8875151751f2f20a059e501ba631": {
     "company": "Unknown",
@@ -87,7 +136,11 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "5f509272007e9cab5bbeb0688e899548": {
     "company": "Unknown",
@@ -97,7 +150,14 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "ff7676f61138b75404d7017d6908d009": {
     "company": "Zingbus",
@@ -107,7 +167,13 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "intern"
+    ],
+    "is_software_role": false
   },
   "716f65257e671ecfe33a9d014864cb02": {
     "company": "Unknown",
@@ -117,7 +183,11 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "c2ff61ed42dec76ff7869d9882ca3dfa": {
     "company": "Unknown",
@@ -127,7 +197,15 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "b8db5cb80f5c8283c4651a2ee99cda4b": {
     "company": "Unknown",
@@ -137,7 +215,16 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "application support",
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": true
   },
   "a99ea34d9519706765f9f2e04c9124c0": {
     "company": "Unknown",
@@ -147,7 +234,13 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "engineer"
+    ],
+    "is_software_role": false
   },
   "333fc2e75f39b313536d81b282b7be04": {
     "company": "INZPIRE IOT SOLUTIONS PVT. LTD.",
@@ -157,7 +250,13 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "engineer"
+    ],
+    "is_software_role": false
   },
   "26e77937c7883423ec00cc9093c7ad81": {
     "company": "Unknown",
@@ -167,7 +266,15 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "621f0d982c850b59bf03463f53990019": {
     "company": "Unknown",
@@ -177,7 +284,16 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "full-stack"
+    ],
+    "is_software_role": true
   },
   "54a8694a0217e9495bfce813b59b0132": {
     "company": "Unknown",
@@ -187,7 +303,16 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 25,
+    "matched_terms": [
+      "developer",
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "d6f127fd3e8de5b3c217a520bc6ae989": {
     "company": "Unknown",
@@ -197,7 +322,11 @@
     "experience": "Fresher",
     "source": "Freshersworld - Chennai",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "0f2cb42fc61dad3b86a2c361c4710174": {
     "company": "Dreamscribe Brands",
@@ -207,7 +336,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 12,
+    "matched_terms": [
+      "fresher"
+    ],
+    "is_software_role": false
   },
   "886417526a5ac101565a3e90b57084ae": {
     "company": "Accenture in India",
@@ -217,7 +352,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "73eec7c506945a3638ac867b9aa7ada1": {
     "company": "Rockwell Automation",
@@ -227,7 +366,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "4d70460de0360ddf1621ffe125b04c88": {
     "company": "Accenture in India",
@@ -237,7 +380,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "bdb04a8480b11a4b80a6a1dabde70d1f": {
     "company": "Sankar Infraprojects (P) Ltd",
@@ -247,7 +394,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "ce6aaacecd98059b04dc950255f6e79f": {
     "company": "Justo Global",
@@ -257,7 +408,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "5b2e4a4aceb29620b2ed9cb10b3e821c": {
     "company": "Expleo Group",
@@ -267,7 +422,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "b8320c0db76b5ee7ce3dd65b3946779e": {
     "company": "CADD Centre Chennai",
@@ -277,7 +436,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 18,
+    "matched_terms": [
+      "engineer"
+    ],
+    "is_software_role": false
   },
   "dc005a10bf9bd1ded29a86b9a449b76c": {
     "company": "Harris Computer",
@@ -287,7 +452,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "b7f7a74acdf1df1a53696488948da4c3": {
     "company": "R1 RCM",
@@ -297,7 +466,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "db67f44a5e7d2028c46be24da3bc6a55": {
     "company": "CRUX",
@@ -307,7 +483,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "IT support",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "d7d66e267643303890ee158fcf6bd056": {
     "company": "Emerson",
@@ -317,7 +497,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "3a2f5f464162ffbca6cba0e95acf4d27": {
     "company": "Origin Nutrition",
@@ -327,7 +511,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "ca19767cf742fdaf7fa97d53f70db2d5": {
     "company": "Rentokil Initial",
@@ -337,7 +525,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "5f952dce7e54ab2004dd8dff35e8e5d8": {
     "company": "CogNet",
@@ -347,7 +539,15 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 36,
+    "matched_terms": [
+      "fresher",
+      "freshers",
+      "trainee"
+    ],
+    "is_software_role": false
   },
   "3e4b735d9265f21d704cce5f2cfefb5e": {
     "company": "DATAMARK, Inc.",
@@ -357,7 +557,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "3c3e73a4745c1c781eb5333b53fb7e09": {
     "company": "IBM",
@@ -367,7 +571,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "b837a1c2fc9f3ffb9009d6bfa1993bf7": {
     "company": "Momentive",
@@ -377,7 +585,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 12,
+    "matched_terms": [
+      "junior"
+    ],
+    "is_software_role": false
   },
   "46293bbf492653cefbb3b6c794c85e0a": {
     "company": "Metayb",
@@ -387,7 +601,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "518d0b209929e86e6542ba22cd9dafed": {
     "company": "EY",
@@ -397,7 +618,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "f9661be849abd5d996854e243ebafbfc": {
     "company": "Rentokil Initial",
@@ -407,7 +632,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "f13514c0fd02de707d8de2c9dd83cd42": {
     "company": "Soffit Infrastructure Services (P) Ltd",
@@ -417,7 +646,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "2ffbf084f7822623fd795cac522392df": {
     "company": "Sutherland",
@@ -427,7 +663,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "a9610e4a1c97fa3e571f3e24886d561c": {
     "company": "Arkie Atelier Design India [P] Ltd",
@@ -437,7 +677,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "e7ffdf0dbc6c7f19366cdd54c65a1ea9": {
     "company": "Coronis Ajuba",
@@ -447,7 +691,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "trainee"
+    ],
+    "is_software_role": false
   },
   "80765fc0bfd154d1882f28f3198cf56a": {
     "company": "Eppendorf",
@@ -457,7 +707,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 30,
+    "matched_terms": [
+      "apprentice",
+      "engineer"
+    ],
+    "is_software_role": false
   },
   "369ef10b42727704d6298adf530505b4": {
     "company": "AUSTRA RCM PRIVATE LIMITED",
@@ -467,7 +724,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "IT support",
+    "software_score": 12,
+    "matched_terms": [
+      "intern"
+    ],
+    "is_software_role": false
   },
   "6eb594eac69b7a8fc04481efb7925970": {
     "company": "Colan Infotech Private Limited",
@@ -477,7 +740,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 30,
+    "matched_terms": [
+      "developer",
+      "junior"
+    ],
+    "is_software_role": false
   },
   "f88b4980b59b56ca1421d6b89176bb9a": {
     "company": "ELIXIR Global",
@@ -487,7 +757,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "junior"
+    ],
+    "is_software_role": false
   },
   "e4d76f459b0a03caed46e63e527d71cb": {
     "company": "Green Komet- Bridging Professional",
@@ -497,7 +774,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 18,
+    "matched_terms": [
+      "developer"
+    ],
+    "is_software_role": false
   },
   "a78989568bcad23a25a6a926b943c8f5": {
     "company": "Green Komet- Bridging Professional",
@@ -507,7 +790,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "9c048ebe318088c0dbc3043b9c46dabb": {
     "company": "Citi",
@@ -517,7 +804,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "38df9383136de47fc359aaf9ba60cbf5": {
     "company": "3Ding",
@@ -527,7 +818,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "2cf890dc3634d4f9c663cd0384df4650": {
     "company": "Flex",
@@ -537,7 +832,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "junior"
+    ],
+    "is_software_role": false
   },
   "c88a525a6484cbd4f7b252a256ec5602": {
     "company": "SQ1 Security",
@@ -547,7 +848,16 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "engineer",
+      "engineering",
+      "graduate engineer",
+      "trainee"
+    ],
+    "is_software_role": true
   },
   "9086c28bd8ca7c35bed2083a76c50513": {
     "company": "Pullman Hotels & Resorts",
@@ -557,7 +867,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "9831f180a91cc6bd88bbdcf5b07ed589": {
     "company": "Guidehouse",
@@ -567,7 +881,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 12,
+    "matched_terms": [
+      "junior"
+    ],
+    "is_software_role": false
   },
   "9e7e567559f8b862802475d22c57dea8": {
     "company": "CADFEM APAC",
@@ -577,7 +897,16 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "engineer",
+      "engineering",
+      "graduate engineer",
+      "trainee"
+    ],
+    "is_software_role": true
   },
   "faad78d32532d361b760e50a98eb9969": {
     "company": "Sankar Infraprojects (P) Ltd",
@@ -587,7 +916,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "bb88df260ecf824fc5a4218b89b2dbf3": {
     "company": "Citi",
@@ -597,7 +930,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "68fcdf92b888dd7d6254e3d6db5d9657": {
     "company": "Medical Billing Unlimited | A Coronis Health Company",
@@ -607,7 +944,14 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false
   },
   "2cbdd2004d9f680c176e99794a55e891": {
     "company": "Capital Honda",
@@ -617,7 +961,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "82ff4094e01d3183b090d6ddc25c5fb3": {
     "company": "Flex",
@@ -627,7 +975,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "8dfad484502078b0bb8395a074209351": {
     "company": "Kemin Industries",
@@ -637,7 +989,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "trainee"
+    ],
+    "is_software_role": false
   },
   "5691a6a51967738c895505f1d4218c63": {
     "company": "Experienzing",
@@ -647,7 +1005,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "19ca48de1382ec503968c2fd5f93c39d": {
     "company": "MAN & SOIL BUILDERS PRIVATE LIMITED",
@@ -657,7 +1019,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [
+      "junior"
+    ],
+    "is_software_role": false
   },
   "2d0e9091817854a51a68a722b45b8821": {
     "company": "Mounee Consulting Services Private Limited",
@@ -667,7 +1035,11 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false
   },
   "1aff4b61532f52a2d67d90934afb72b0": {
     "company": "Sutherland",
@@ -677,7 +1049,13 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Other early career",
+    "software_score": 12,
+    "matched_terms": [
+      "intern"
+    ],
+    "is_software_role": false
   },
   "bab2ad65ff4b8be8cff4a9b93838a88d": {
     "company": "Unibros Technologies",
@@ -687,7 +1065,15 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Software development",
+    "software_score": 70,
+    "matched_terms": [
+      "engineer",
+      "software",
+      "trainee"
+    ],
+    "is_software_role": true
   },
   "60076bd2d82f0bed6b22a03d1ffbe4cf": {
     "company": "Vertiv",
@@ -697,6 +1083,728 @@
     "experience": "Fresher",
     "source": "LinkedIn - Chennai Entry Level",
     "first_seen": "2026-09-27",
-    "first_seen_time": "2026-09-27 13:04:25"
+    "first_seen_time": "2026-09-27 13:04:25",
+    "category": "Data & AI",
+    "software_score": 30,
+    "matched_terms": [
+      "engineer",
+      "trainee"
+    ],
+    "is_software_role": false
+  },
+  "8d25f4a4b588a7138a9d27e4": {
+    "company": "JEEVADITYA SOLAR POWER PRIVATE LIMITED",
+    "title": "ITI Technician - Chennai Jobs Opening in JEEVADITYA SOLAR POWER PRIVATE LIMITED at Tambaram, Chennai, Tiruchirappalli Less",
+    "link": "https://www.freshersworld.com/jobs/iti-technician-chennai-jobs-opening-in-jeevaditya-solar-power-private-limited-at-tambaram-chennai-tiruchirappalli-2952234",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "e5c06eee6ccdb409b4f9afd0": {
+    "company": "Vishakan Placement Service 91 955 195 2508",
+    "title": "Telugu Telecaller-Fresher14K Inhand Perungudi Chennai Jobs Opening in Vishakan Placement Service 91 955 195 2508 at Medavakkam, Perungudi, Sholinganallur, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/telugu-telecaller-fresher14k-inhand-perungudi-chennai-jobs-opening-in-vishakan-placement-service-91-955-195-2508-at-medavakkam-perungudi-sholinganallur-chennai-2940949",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "fresher"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "c7de7f00ad8a8b58b7be1ab5": {
+    "company": "Client of Teamlease",
+    "title": "Telecallers Jobs Opening in Client of Teamlease at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/telecallers-jobs-opening-in-client-of-teamlease-at-chennai-others-chennai-2951232",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "efb080f3e8904fd4b767945b": {
+    "company": "MAGWIL",
+    "title": "Business Development Executive Jobs Opening in MAGWIL at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/business-development-executive-jobs-opening-in-magwil-at-chennai-others-chennai-2943048",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "development"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "56a1dfae88a6a301c2133a6d": {
+    "company": "Client of freshersworld",
+    "title": "3D Animator Jobs Opening in Client of freshersworld at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/3d-animator-jobs-opening-in-client-of-freshersworld-at-chennai-others-chennai-2950515",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "ef0cd2ac374fcbabc2601c9a": {
+    "company": "Client of freshersworld",
+    "title": "Catalog Analyst Jobs Opening in Client of freshersworld at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/catalog-analyst-jobs-opening-in-client-of-freshersworld-at-chennai-others-chennai-2951325",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "bfe2b58a68aba14b6e065325": {
+    "company": "Leading MNC Company",
+    "title": "Software Engineer Jobs Opening in Leading MNC Company at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/software-engineer-jobs-opening-in-leading-mnc-company-at-chennai-others-chennai-2948915",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 23,
+    "matched_terms": [
+      "engineer",
+      "software"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "707393213d0da41bf0431d06": {
+    "company": "VIT University",
+    "title": "Project Technical Staff-III Jobs Opening in VIT University at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/project-technical-staff-iii-jobs-opening-in-vit-university-at-chennai-others-chennai-2944767",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "c8cf46ff5cf930793a0882f7": {
+    "company": "Keenmatics Corrugations Pvt Ltd.",
+    "title": "Mechanical Service Engineer Jobs Opening in Keenmatics Corrugations Pvt Ltd. at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/mechanical-service-engineer-jobs-opening-in-keenmatics-corrugations-pvt-ltd-at-chennai-others-chennai-2952439",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "engineer"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "b4d6e6a3afe9c9417c63cb64": {
+    "company": "Zingbus",
+    "title": "Social Media Intern Jobs Opening in Zingbus at Chennai-Others, Coimbatore-Others, Chennai, Coimbatore Less",
+    "link": "https://www.freshersworld.com/jobs/social-media-intern-jobs-opening-in-zingbus-at-chennai-others-coimbatore-others-chennai-coimbatore-2938137",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 12,
+    "matched_terms": [
+      "intern"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "dbd2edde08a2d3b487c36fec": {
+    "company": "A Client of freshrsworld",
+    "title": "Inside Sales Specialist Jobs Opening in A Client of freshrsworld at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/inside-sales-specialist-jobs-opening-in-a-client-of-freshrsworld-at-chennai-others-chennai-2949041",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "32735330cceeae3297c437cf": {
+    "company": "A client of freshers world",
+    "title": "Calibration Engineer Jobs Opening in A client of freshers world at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/calibration-engineer-jobs-opening-in-a-client-of-freshers-world-at-chennai-others-chennai-2950469",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "20b5f68038d2bda1c9ddcb07": {
+    "company": "Client of freshers world",
+    "title": "Application Support Engineer Jobs Opening in Client of freshers world at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/application-support-engineer-jobs-opening-in-client-of-freshers-world-at-chennai-others-chennai-2949727",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "application support",
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "86ee33cf1f667b92ad3a9006": {
+    "company": "A Client of freshers world",
+    "title": "Graphic Designer Jobs Opening in A Client of freshers world at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/graphic-designer-jobs-opening-in-a-client-of-freshers-world-at-chennai-others-chennai-2949673",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 24,
+    "matched_terms": [
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "f314e7893f7dc007c4033c1b": {
+    "company": "Client of Freshersworld",
+    "title": "Senior Engineer - Mobile App Developer Jobs Opening in Client of Freshersworld at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/senior-engineer-mobile-app-developer-jobs-opening-in-client-of-freshersworld-at-chennai-others-chennai-2949035",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 25,
+    "matched_terms": [
+      "developer",
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "86159017263dbf8e382ef2b6": {
+    "company": "INZPIRE IOT SOLUTIONS PVT. LTD.",
+    "title": "Hardware/Service Engineer Jobs Opening in INZPIRE IOT SOLUTIONS PVT. LTD. at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/hardware-service-engineer-jobs-opening-in-inzpire-iot-solutions-pvt-ltd-at-chennai-others-chennai-2952544",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "engineer"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "b915b98e050e1099a0895218": {
+    "company": "A client of freshers world",
+    "title": "Diploma Electrical Engineer Jobs Opening in A client of freshers world at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/diploma-electrical-engineer-jobs-opening-in-a-client-of-freshers-world-at-chennai-others-chennai-2950922",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "fb80fca5cb1d61ec8e679396": {
+    "company": "A client of freshers world",
+    "title": "Full-Stack Developer Jobs Opening in A client of freshers world at Chennai-Others, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/full-stack-developer-jobs-opening-in-a-client-of-freshers-world-at-chennai-others-chennai-2949270",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "full-stack"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "3c35d293775b7993b2599358": {
+    "company": "Wheels India Limited",
+    "title": "Jobs Opening in Wheels India Limited at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/naps-in-chennai-for-wheels-india-limited-2791289",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Chennai",
+    "category": "Data & AI",
+    "software_score": 0,
+    "matched_terms": [],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "7c8a0adc43112f897927d4d8": {
+    "company": "TURN 5 TECH HR SOLUTION 91 74488 61717",
+    "title": "Full Stack Developer-FresherMaleStipend 7500 Guindy Chn Jobs Opening in TURN 5 TECH HR SOLUTION 91 74488 61717 at Guindy, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/full-stack-developer-freshermalestipend-7500-guindy-chn-jobs-opening-in-turn-5-tech-hr-solution-91-74488-61717-at-guindy-chennai-2952362",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 70,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "full stack"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "7a6a425e87730b92580baf87": {
+    "company": "TURN5TECH HR SOLUTION 91 74488 61717",
+    "title": "Full Stack Developer-Fresher Graduate-7500 Stipend-Guindy Chn Jobs Opening in TURN5TECH HR SOLUTION 91 74488 61717 at Guindy, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/full-stack-developer-fresher-graduate-7500-stipend-guindy-chn-jobs-opening-in-turn5tech-hr-solution-91-74488-61717-at-guindy-chennai-2952291",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 70,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "full stack"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "277d7624cd2267a5bad4ee17": {
+    "company": "Beeja Ai Solutions Private Limited",
+    "title": "AI Developer Jobs Opening in Beeja Ai Solutions Private Limited at West Mambalam, Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/ai-developer-jobs-opening-in-beeja-ai-solutions-private-limited-at-west-mambalam-chennai-2939201",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 18,
+    "matched_terms": [
+      "developer"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "00e8cec591d42a077e475386": {
+    "company": "A Client of Freshersworld",
+    "title": "Sr. Python Developer Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/sr-python-developer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2951363",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "python"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "1d72c49796b66027b4009292": {
+    "company": "A Client of Freshersworld",
+    "title": "Senior Test Automation Engineer Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/senior-test-automation-engineer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2951208",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 7,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "6bcdaeba66cea22bd8dd4c81": {
+    "company": "A Client of Freshersworld",
+    "title": "Java Developers Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/java-developers-jobs-opening-in-a-client-of-freshersworld-at-chennai-2951062",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "java developer"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "284949d8913ba84e34cf0dc5": {
+    "company": "A Client of Freshersworld",
+    "title": ".NET OR Java Developers Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/-net-or-java-developers-jobs-opening-in-a-client-of-freshersworld-at-chennai-2951043",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "java developer"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "ace17dd011aa63a3c6f47863": {
+    "company": "A Client of Freshersworld",
+    "title": "Senior PHP Developer Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/senior-php-developer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2951018",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 7,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "4655b9ce498fc80f57d790bd": {
+    "company": "A client of freshersworld",
+    "title": "Web Developer Jobs Opening in A client of freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/web-developer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950908",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "web developer"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "6bef903ad4a9018a373d2e09": {
+    "company": "A client of teamlease",
+    "title": "Data Engineer Jobs Opening in A client of teamlease at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/data-engineer-jobs-opening-in-a-client-of-teamlease-at-chennai-2950899",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 36,
+    "matched_terms": [
+      "data engineer",
+      "engineer"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "09f6722420cc8e7b6650db36": {
+    "company": "Client Of Freshersworld",
+    "title": "Azure .Net Core Developer Jobs Opening in Client Of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/azure-net-core-developer-jobs-opening-in-client-of-freshersworld-at-chennai-2950870",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "f0311e341ed810eee7500317": {
+    "company": "A client of freshersworld",
+    "title": "Software Engineer Jobs Opening in A client of freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/software-engineer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950855",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 82,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers",
+      "software"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "a96ebf378af7611130186bcb": {
+    "company": "A Client of Freshersworld",
+    "title": "Sr. Test Engineer Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/sr-test-engineer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950847",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 60,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers",
+      "test engineer"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "e2871e5040d43266f71ac1d4": {
+    "company": "A Client of Freshersworld",
+    "title": "Software Development Internship Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/software-development-internship-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950810",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 84,
+    "matched_terms": [
+      "development",
+      "fresher",
+      "freshers",
+      "intern",
+      "internship",
+      "software"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "3c33d68cbc36a81a67b490e7": {
+    "company": "A Client of Freshersworld",
+    "title": "Developer Trainee Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/developer-trainee-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950655",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 54,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers",
+      "trainee"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "8a03b7170c8bbd04e7fb55d6": {
+    "company": "A Client of Freshersworld",
+    "title": "Application Engineer -Senior Tester Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/application-engineer-senior-tester-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950607",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 7,
+    "matched_terms": [
+      "engineer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "51b41bbc21aab38fca0518df": {
+    "company": "A Client of Freshersworld",
+    "title": "Cloud Graphics Driver Developer Jobs Opening in A Client of Freshersworld at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/cloud-graphics-driver-developer-jobs-opening-in-a-client-of-freshersworld-at-chennai-2950479",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Data & AI",
+    "software_score": 42,
+    "matched_terms": [
+      "developer",
+      "fresher",
+      "freshers"
+    ],
+    "is_software_role": false,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
+  },
+  "600a16100fc909c9c2c76b11": {
+    "company": "A client of teamlease",
+    "title": "Software Engineer Jobs Opening in A client of teamlease at Chennai Less",
+    "link": "https://www.freshersworld.com/jobs/software-engineer-jobs-opening-in-a-client-of-teamlease-at-chennai-2950429",
+    "location": "Chennai",
+    "experience": "Fresher / entry level",
+    "description": "",
+    "source": "Freshersworld · Software Chennai",
+    "category": "Software development",
+    "software_score": 58,
+    "matched_terms": [
+      "engineer",
+      "software"
+    ],
+    "is_software_role": true,
+    "first_seen": "2026-09-28",
+    "first_seen_time": "2026-09-28 07:09:05",
+    "last_seen": "2026-09-28"
   }
 }

@@ -1,514 +1,193 @@
 #!/usr/bin/env python3
+"""Chennai early-career job tracker.
+
+Configuration-driven and polite: it tries normal HTML first, falls back to
+JSON-LD JobPosting data, checks robots.txt, retries transient failures, and
+keeps source health in dashboard_data.js instead of silently hiding failures.
 """
-Enhanced Fresher Job Scraper - Real-Time Edition
--------------------------------------------------
-Scrapes fresher jobs from multiple career websites in Chennai with real-time updates.
-
-Features:
-  - Multi-source scraping (10+ job portals)
-  - Real-time continuous monitoring
-  - Selenium support for dynamic websites
-  - Better Chennai location filtering
-  - Enhanced fresher job detection
-  - Duplicate detection
-  - Auto-retry on failures
-
-Usage:
-  python enhanced_scraper.py              # Run once
-  python enhanced_scraper.py --realtime   # Run continuously with scheduled updates
-  python enhanced_scraper.py --interval 30 # Run every 30 minutes
-"""
-
-import json
-import hashlib
-import time
-import sys
-import argparse
-import logging
-from datetime import datetime, date
+from __future__ import annotations
+import argparse, hashlib, json, logging, re, sys, time
+from datetime import date, datetime
 from pathlib import Path
-from urllib.parse import urljoin
+from typing import Any
 from urllib import robotparser
-from typing import List, Dict, Optional
-
+from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
-import schedule
-
-# Selenium imports (optional, will gracefully degrade)
 try:
-    from selenium import webdriver
-    from selenium.webdriver.chrome.service import Service
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions as EC
-    from webdriver_manager.chrome import ChromeDriverManager
-    SELENIUM_AVAILABLE = True
+    import schedule
 except ImportError:
-    SELENIUM_AVAILABLE = False
-    print("Warning: Selenium not available. Sites requiring JavaScript will be skipped.")
-    print("Install with: pip install selenium webdriver-manager")
+    schedule = None
 
-# Setup
-BASE_DIR = Path(__file__).parent
-CONFIG_PATH = BASE_DIR / "config.json"
-DB_PATH = BASE_DIR / "jobs_db.json"
-DASHBOARD_DATA_PATH = BASE_DIR / "dashboard_data.js"
-LOG_PATH = BASE_DIR / "scraper.log"
+BASE_DIR = Path(__file__).resolve().parent
+CONFIG_PATH, DB_PATH = BASE_DIR / 'config.json', BASE_DIR / 'jobs_db.json'
+DASHBOARD_DATA_PATH, LOG_PATH = BASE_DIR / 'dashboard_data.js', BASE_DIR / 'scraper.log'
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(LOG_PATH, encoding='utf-8'), logging.StreamHandler(sys.stdout)])
+logger = logging.getLogger('job-tracker')
+HEADERS = {'User-Agent': 'ChennaiEarlyCareerTracker/2.0 (+personal research)', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-IN,en;q=0.8'}
+SOFTWARE_TERMS = {'software','developer','development','engineering','engineer','programmer','frontend','front end','backend','back end','full stack','full-stack','web developer','mobile developer','android','ios','qa','quality assurance','automation tester','test engineer','devops','cloud engineer','data engineer','data analyst','machine learning','ai engineer','python','java developer','react','node.js','application support'}
+EXCLUDE_TERMS = {'senior','lead','manager','director','principal','architect','7+ years','8+ years','10+ years','12+ years','15+ years'}
+EARLY_TERMS = {'fresher','freshers','entry level','entry-level','graduate trainee','campus hire','trainee','associate engineer','0-1 year','0-1 years','0-2 years','junior','new grad','graduate engineer','recent graduate','walk-in','walkin','no experience','intern','internship','apprentice','early career'}
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(LOG_PATH, encoding='utf-8'),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
-logger = logging.getLogger(__name__)
+def load_json(path: Path, fallback: Any) -> Any:
+    try: return json.loads(path.read_text(encoding='utf-8'))
+    except (FileNotFoundError, json.JSONDecodeError): return fallback
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive",
-}
+def clean(value: Any) -> str: return re.sub(r'\s+', ' ', str(value or '')).strip()
+def terms_found(text: str, terms: set[str]) -> list[str]:
+    lower = clean(text).lower(); return sorted({term for term in terms if term in lower})
 
+def classify_job(title: str, description: str = '') -> tuple[str, int, list[str]]:
+    text = f'{title} {description}'; low = text.lower()
+    software_hits, early_hits, exclude_hits = terms_found(text, SOFTWARE_TERMS), terms_found(text, EARLY_TERMS), terms_found(text, EXCLUDE_TERMS)
+    score = min(100, len(software_hits) * 18 + len(early_hits) * 12)
+    if exclude_hits: score = max(0, score - 35)
+    if any(term in low for term in ('software developer','software engineer','full stack','frontend developer','backend developer')): score = min(100, score + 22)
+    if score >= 45: category = 'Software development'
+    elif any(term in low for term in ('data','analyst','machine learning','ai')): category = 'Data & AI'
+    elif any(term in low for term in ('qa','test','quality')): category = 'QA & testing'
+    elif any(term in low for term in ('support','technical support','application support')): category = 'IT support'
+    else: category = 'Other early career'
+    return category, score, sorted(set(software_hits + early_hits))
+
+def job_id(job: dict) -> str:
+    link = clean(job.get('link')); identity = link if link.startswith('http') else f"{clean(job.get('company')).lower()}|{clean(job.get('title')).lower()}"
+    return hashlib.sha256(identity.encode()).hexdigest()[:24]
+
+def robots_allows(url: str) -> bool:
+    try:
+        parsed = urlparse(url); rp = robotparser.RobotFileParser(f'{parsed.scheme}://{parsed.netloc}/robots.txt'); rp.read()
+        return rp.can_fetch(HEADERS['User-Agent'], url)
+    except Exception as exc:
+        logger.warning('Could not check robots.txt for %s: %s', url, exc); return True
+
+def first_text(card: Any, selectors: str) -> str:
+    for selector in (s.strip() for s in (selectors or '').split(',')):
+        if selector:
+            element = card.select_one(selector)
+            value = clean(element.get_text(' ', strip=True)) if element else ''
+            if value: return value
+    return ''
+
+def first_link(card: Any, source: dict, page_url: str) -> str:
+    attr = source.get('link_attr', 'href')
+    if source.get('link_on') == 'card': raw = card.get(attr, '')
+    else:
+        raw = ''
+        for selector in (s.strip() for s in source.get('link_selector', source.get('title_selector', '')).split(',')):
+            element = card.select_one(selector)
+            if element and element.get(attr): raw = element.get(attr); break
+    return urljoin(source.get('link_base') or page_url, clean(raw)) if raw else page_url
+
+def jsonld_jobs(soup: BeautifulSoup, source: dict) -> list[dict]:
+    found = []
+    for script in soup.select('script[type="application/ld+json"]'):
+        try: payload = json.loads(script.string or script.get_text())
+        except (json.JSONDecodeError, TypeError): continue
+        records = payload if isinstance(payload, list) else (payload.get('@graph', [payload]) if isinstance(payload, dict) else [])
+        for record in records:
+            if not isinstance(record, dict) or record.get('@type') not in ('JobPosting', ['JobPosting']): continue
+            location = record.get('jobLocation', {}); location = location[0] if isinstance(location, list) and location else location
+            address = location.get('address', {}) if isinstance(location, dict) else {}
+            loc = clean(' '.join(str(address.get(k, '')) for k in ('addressLocality','addressRegion','addressCountry'))) if isinstance(address, dict) else clean(location)
+            found.append({'company': clean((record.get('hiringOrganization') or {}).get('name', 'Unknown')), 'title': clean(record.get('title')), 'link': clean(record.get('url')) or source['url'], 'location': loc, 'experience': clean(record.get('experienceRequirements')), 'description': BeautifulSoup(clean(record.get('description')), 'lxml').get_text(' ', strip=True)[:600], 'source': source['name']})
+    return found
+
+def source_is_prefiltered(job: dict, config: dict) -> bool:
+    return any(s.get('name') == job.get('source') and s.get('already_filtered_for_freshers') for s in config.get('sources', []))
 
 class JobScraper:
     def __init__(self, config_path: Path = CONFIG_PATH):
-        self.config = self.load_config(config_path)
-        self.db = self.load_db()
-        self.driver = None
-        self.session = requests.Session()
-        self.session.headers.update(HEADERS)
-        
-    def load_config(self, path: Path) -> dict:
-        """Load configuration from JSON file"""
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    
-    def load_db(self) -> dict:
-        """Load existing job database"""
-        if DB_PATH.exists():
-            with open(DB_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
-        return {}
-    
-    def save_db(self):
-        """Save job database to file"""
-        with open(DB_PATH, "w", encoding="utf-8") as f:
-            json.dump(self.db, f, indent=2, ensure_ascii=False)
-    
-    def get_selenium_driver(self):
-        """Initialize Selenium WebDriver (lazy loading)"""
-        if not SELENIUM_AVAILABLE:
-            return None
-            
-        if self.driver is None:
-            try:
-                chrome_options = Options()
-                if self.config.get("scraper_settings", {}).get("headless_browser", True):
-                    chrome_options.add_argument("--headless")
-                chrome_options.add_argument("--no-sandbox")
-                chrome_options.add_argument("--disable-dev-shm-usage")
-                chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-                chrome_options.add_argument(f"user-agent={HEADERS['User-Agent']}")
-                
-                service = Service(ChromeDriverManager().install())
-                self.driver = webdriver.Chrome(service=service, options=chrome_options)
-                logger.info("Selenium WebDriver initialized")
-            except Exception as e:
-                logger.error(f"Failed to initialize Selenium: {e}")
-                return None
-        return self.driver
-    
-    def close_driver(self):
-        """Close Selenium WebDriver"""
-        if self.driver:
-            try:
-                self.driver.quit()
-                self.driver = None
-            except Exception as e:
-                logger.error(f"Error closing driver: {e}")
-    
-    def make_job_id(self, company: str, title: str, link: str) -> str:
-        """Generate unique job ID"""
-        raw = f"{company}|{title}|{link}".lower().strip()
-        return hashlib.md5(raw.encode("utf-8")).hexdigest()
-    
-    def matches_keywords(self, text: str, keywords: List[str]) -> bool:
-        """Check if text matches any keyword"""
-        if not text:
-            return False
-        text_lower = text.lower()
-        return any(kw.lower() in text_lower for kw in keywords)
-    
-    def extract_text(self, element) -> str:
-        """Safely extract text from BeautifulSoup element"""
-        return element.get_text(strip=True) if element else ""
-    
-    def is_chennai_location(self, location: str) -> bool:
-        """Check if location is Chennai"""
-        if not location:
-            return False
-        location_keywords = self.config.get("location_keywords", ["chennai"])
-        return self.matches_keywords(location, location_keywords)
-    
-    def is_fresher_job(self, title: str, experience: str = "") -> bool:
-        """Determine if job is for freshers"""
-        fresher_keywords = self.config.get("fresher_keywords", [])
-        combined_text = f"{title} {experience}"
-        return self.matches_keywords(combined_text, fresher_keywords)
-    
-    def robots_allows(self, url: str) -> bool:
-        """Check if robots.txt allows scraping"""
+        self.config = load_json(config_path, {}); self.db = load_json(DB_PATH, {}); self.source_health = []
+        self.session = requests.Session(); self.session.headers.update(HEADERS)
+    def fetch(self, url: str):
+        timeout = int(self.config.get('scraper_settings', {}).get('request_timeout', 20))
         try:
-            parts = url.split("/")
-            base = f"{parts[0]}//{parts[2]}"
-            rp = robotparser.RobotFileParser()
-            rp.set_url(urljoin(base, "/robots.txt"))
-            rp.read()
-            return rp.can_fetch(HEADERS["User-Agent"], url)
-        except Exception:
-            return True  # Default to allow if check fails
-    
-    def fetch_with_requests(self, url: str, timeout: int = 20) -> Optional[BeautifulSoup]:
-        """Fetch page using requests library"""
-        try:
-            resp = self.session.get(url, timeout=timeout)
-            resp.raise_for_status()
-            return BeautifulSoup(resp.text, "lxml")
-        except requests.RequestException as e:
-            logger.error(f"Request failed for {url}: {e}")
-            return None
-    
-    def fetch_with_selenium(self, url: str, wait_selector: str = None, timeout: int = 20) -> Optional[BeautifulSoup]:
-        """Fetch page using Selenium for dynamic content"""
-        driver = self.get_selenium_driver()
-        if not driver:
-            logger.warning(f"Selenium not available for {url}")
-            return None
-        
-        try:
-            driver.get(url)
-            if wait_selector:
-                WebDriverWait(driver, timeout).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, wait_selector))
-                )
-            else:
-                time.sleep(3)  # Wait for dynamic content
-            
-            return BeautifulSoup(driver.page_source, "lxml")
-        except Exception as e:
-            logger.error(f"Selenium fetch failed for {url}: {e}")
-            return None
-    
-    def scrape_source(self, source: dict) -> List[dict]:
-        """Scrape jobs from a single source"""
-        url = source["url"]
-        source_name = source["name"]
-        logger.info(f"Scraping: {source_name}")
-        logger.info(f"  URL: {url}")
-        
-        # Check robots.txt
-        if not self.robots_allows(url):
-            logger.warning(f"  Robots.txt disallows scraping: {url}")
-            return []
-        
-        # Fetch page
-        if source.get("requires_selenium", False):
-            soup = self.fetch_with_selenium(url, source.get("job_card_selector"))
-        else:
-            soup = self.fetch_with_requests(url)
-        
+            response = self.session.get(url, timeout=timeout); response.raise_for_status(); return BeautifulSoup(response.text, 'lxml'), 'ok'
+        except requests.RequestException as exc: return None, clean(exc)
+    def scrape_source(self, source: dict) -> list[dict]:
+        url = source['url']
+        if not robots_allows(url): self.source_health.append({'name': source['name'], 'status': 'blocked by robots.txt', 'jobs': 0}); return []
+        soup, error = self.fetch(url)
         if not soup:
-            logger.error(f"  Failed to fetch page content")
-            return []
-        
-        # Extract job cards
-        job_card_selector = source["job_card_selector"]
-        cards = soup.select(job_card_selector)
-        logger.info(f"  Found {len(cards)} job cards with selector: {job_card_selector}")
-        
-        if len(cards) == 0:
-            # Try alternative selectors if available
-            selectors = job_card_selector.split(", ")
-            for alt_selector in selectors:
-                cards = soup.select(alt_selector.strip())
-                if len(cards) > 0:
-                    logger.info(f"  Alternative selector worked: {alt_selector} - found {len(cards)} cards")
-                    break
-        
-        if len(cards) == 0:
-            logger.warning(f"  No job cards found. Page structure may have changed.")
-            logger.debug(f"  Page preview: {soup.get_text()[:500]}")
-            return []
-        
+            self.source_health.append({'name': source['name'], 'status': 'request failed', 'jobs': 0, 'detail': error[:120]}); logger.warning('%s: %s', source['name'], error); return []
+        cards, working_selector = [], ''
+        for selector in (s.strip() for s in source.get('job_card_selector','').split(',') if s.strip()):
+            cards = soup.select(selector)
+            if cards: working_selector = selector; break
         results = []
-        for idx, card in enumerate(cards):
-            try:
-                # Extract title with multiple selector attempts
-                title = ""
-                title_selectors = source["title_selector"].split(", ")
-                for ts in title_selectors:
-                    title_el = card.select_one(ts.strip())
-                    if title_el:
-                        title = self.extract_text(title_el)
-                        if title:
-                            break
-                
-                if not title:
-                    logger.debug(f"  Card {idx+1}: No title found")
-                    continue
-                
-                # Extract company
-                company = ""
-                if source["type"] == "aggregator":
-                    company_selectors = source.get("company_selector", "").split(", ")
-                    for cs in company_selectors:
-                        if cs:
-                            company_el = card.select_one(cs.strip())
-                            if company_el:
-                                company = self.extract_text(company_el)
-                                if company:
-                                    break
-                    if not company:
-                        company = "Unknown"
-                else:
-                    company = source.get("company_name", "Unknown")
-                
-                # Extract link
-                link = ""
-                link_selectors = source["link_selector"].split(", ")
-                for ls in link_selectors:
-                    link_el = card.select_one(ls.strip())
-                    if link_el and link_el.has_attr(source.get("link_attr", "href")):
-                        link = link_el[source.get("link_attr", "href")]
-                        if link:
-                            link = urljoin(source.get("link_base", url), link)
-                            break
-                
-                # Extract location
-                location = ""
-                if source.get("location_selector"):
-                    loc_selectors = source.get("location_selector", "").split(", ")
-                    for loc_s in loc_selectors:
-                        if loc_s:
-                            loc_el = card.select_one(loc_s.strip())
-                            if loc_el:
-                                location = self.extract_text(loc_el)
-                                if location:
-                                    break
-                
-                # Extract experience (if available)
-                experience = ""
-                if source.get("experience_selector"):
-                    exp_selectors = source.get("experience_selector", "").split(", ")
-                    for exp_s in exp_selectors:
-                        if exp_s:
-                            exp_el = card.select_one(exp_s.strip())
-                            if exp_el:
-                                experience = self.extract_text(exp_el)
-                                if experience:
-                                    break
-                
-                # Filter for Chennai (if location filtering is enabled)
-                settings = self.config.get("scraper_settings", {})
-                if settings.get("location_filter", "").lower() == "chennai":
-                    if location and not self.is_chennai_location(location):
-                        logger.debug(f"  Card {idx+1}: Filtered out (not Chennai): {location}")
-                        continue
-                
-                # Filter for fresher jobs (unless already pre-filtered)
-                if not source.get("already_filtered_for_freshers", False):
-                    if not self.is_fresher_job(title, experience):
-                        logger.debug(f"  Card {idx+1}: Filtered out (not fresher): {title}")
-                        continue
-                
-                job_data = {
-                    "company": company,
-                    "title": title,
-                    "link": link,
-                    "location": location or "Chennai",
-                    "experience": experience,
-                    "source": source_name,
-                }
-                results.append(job_data)
-                logger.debug(f"  OK Job {len(results)}: {title} at {company}")
-                
-            except Exception as e:
-                logger.debug(f"  Error parsing job card {idx+1}: {e}")
-                continue
-        
-        logger.info(f"  -> Extracted {len(results)} valid Chennai fresher jobs from {source_name}")
+        for card in cards[:int(source.get('max_jobs', 100))]:
+            title = first_text(card, source.get('title_selector',''))
+            if not title: continue
+            company = first_text(card, source.get('company_selector','')) or 'Unknown'
+            if company == 'Unknown' and source.get('extract_company_from_title'):
+                match = re.search(r'\bin\s+(.+?)\s+at\s+', title, re.I)
+                if match: company = clean(match.group(1))
+            location, experience = first_text(card, source.get('location_selector','')), first_text(card, source.get('experience_selector',''))
+            description = first_text(card, source.get('description_selector',''))
+            if source.get('already_filtered_for_freshers'): experience = experience or 'Fresher / entry level'
+            results.append({'company': company, 'title': title, 'link': first_link(card, source, url), 'location': location or 'Chennai', 'experience': experience or 'Early career', 'description': description, 'source': source['name']})
+        if not results: results = jsonld_jobs(soup, source)
+        status = 'working' if results or cards else 'reachable, no cards matched'
+        self.source_health.append({'name': source['name'], 'status': status, 'jobs': len(results), 'selector': working_selector}); logger.info('%s: %d jobs (%s)', source['name'], len(results), status)
         return results
-    
-    def run_scraping_cycle(self) -> Dict[str, int]:
-        """Run one complete scraping cycle"""
-        logger.info("="*60)
-        logger.info("Starting scraping cycle")
-        logger.info("="*60)
-        
-        today = date.today().isoformat()
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        
-        enabled_sources = [s for s in self.config["sources"] if s.get("enabled", False)]
-        if not enabled_sources:
-            logger.warning("No sources enabled in config.json")
-            return {"new": 0, "total": len(self.db)}
-        
-        new_jobs = []
-        retry_attempts = self.config.get("scraper_settings", {}).get("retry_attempts", 3)
-        request_delay = self.config.get("scraper_settings", {}).get("request_timeout", 2)
-        
-        for source in enabled_sources:
-            # Retry logic
+    def qualifies(self, job: dict) -> bool:
+        settings = self.config.get('scraper_settings', {}); text = f"{job.get('title','')} {job.get('experience','')} {job.get('description','')}".lower(); location = clean(job.get('location','Chennai')).lower(); target = clean(settings.get('location_filter','Chennai')).lower()
+        if target and target not in location and target not in text: return False
+        category, score, matched = classify_job(job.get('title',''), job.get('description','')); years = re.findall(r'(\d+)\s*\+?\s*year', text)
+        if years and min(map(int, years)) > int(settings.get('max_experience_years', 1)): return False
+        if not source_is_prefiltered(job, self.config) and not (terms_found(text, EARLY_TERMS) or score >= 35): return False
+        job.update({'category': category, 'software_score': score, 'matched_terms': matched, 'is_software_role': score >= 45}); return True
+    def run_cycle(self) -> dict:
+        today, timestamp = date.today().isoformat(), datetime.now().strftime('%Y-%m-%d %H:%M:%S'); settings = self.config.get('scraper_settings', {}); enabled = [s for s in self.config.get('sources', []) if s.get('enabled', False)]; new_jobs = 0
+        for source in enabled:
             jobs = []
-            for attempt in range(retry_attempts):
-                try:
-                    jobs = self.scrape_source(source)
-                    break
-                except Exception as e:
-                    logger.error(f"Attempt {attempt+1} failed for {source['name']}: {e}")
-                    if attempt < retry_attempts - 1:
-                        time.sleep(request_delay * (attempt + 1))
-            
-            # Process jobs
+            for attempt in range(int(settings.get('retry_attempts', 2))):
+                jobs = self.scrape_source(source)
+                if jobs or attempt == int(settings.get('retry_attempts', 2)) - 1: break
+                time.sleep(1.5 * (attempt + 1))
             for job in jobs:
-                job_id = self.make_job_id(job["company"], job["title"], job["link"])
-                if job_id not in self.db:
-                    job["first_seen"] = today
-                    job["first_seen_time"] = timestamp
-                    self.db[job_id] = job
-                    new_jobs.append(job)
-                    logger.info(f"  NEW JOB: {job['title']} at {job['company']}")
-                else:
-                    # Update last_seen
-                    self.db[job_id]["last_seen"] = today
-            
-            # Be polite - delay between sources
-            time.sleep(request_delay)
-        
-        # Save database
-        self.save_db()
-        
-        # Generate dashboard data
-        self.generate_dashboard_data(new_jobs, today, timestamp)
-        
-        stats = {
-            "new": len(new_jobs),
-            "total": len(self.db),
-            "sources_scraped": len(enabled_sources)
-        }
-        
-        logger.info("="*60)
-        logger.info(f"Scraping cycle complete!")
-        logger.info(f"  New jobs found: {stats['new']}")
-        logger.info(f"  Total jobs tracked: {stats['total']}")
-        logger.info(f"  Sources scraped: {stats['sources_scraped']}")
-        logger.info("="*60)
-        
-        return stats
-    
-    def generate_dashboard_data(self, new_jobs: List[dict], today: str, timestamp: str):
-        """Generate dashboard data file"""
-        all_jobs = list(self.db.values())
-        all_jobs.sort(key=lambda j: j.get("first_seen_time", j.get("first_seen", "")), reverse=True)
-        
-        payload = {
-            "generated_at": today,
-            "generated_timestamp": timestamp,
-            "all_jobs": all_jobs,
-            "today_count": len([j for j in all_jobs if j.get("first_seen") == today]),
-            "new_this_cycle": len(new_jobs),
-            "total_jobs": len(all_jobs),
-        }
-        
-        with open(DASHBOARD_DATA_PATH, "w", encoding="utf-8") as f:
-            f.write("const JOBS_DATA = ")
-            json.dump(payload, f, indent=2, ensure_ascii=False)
-            f.write(";\n")
-    
-    def cleanup(self):
-        """Cleanup resources"""
-        self.close_driver()
-        self.session.close()
-
+                if not self.qualifies(job): continue
+                key = job_id(job)
+                if key in self.db: self.db[key].update({'last_seen': today, 'category': job['category'], 'software_score': job['software_score'], 'is_software_role': job['is_software_role'], 'matched_terms': job['matched_terms']})
+                else: job.update({'first_seen': today, 'first_seen_time': timestamp, 'last_seen': today}); self.db[key] = job; new_jobs += 1
+            time.sleep(float(settings.get('source_delay_seconds', 1.5)))
+        self.write_outputs(today, timestamp, new_jobs, len(enabled)); return {'new': new_jobs, 'total': len(self.db), 'sources_scraped': len(enabled), 'source_health': self.source_health}
+    def write_outputs(self, today: str, timestamp: str, new_jobs: int, source_count: int) -> None:
+        target = clean(self.config.get('scraper_settings', {}).get('location_filter', 'Chennai')).lower()
+        self.db = {key: job for key, job in self.db.items() if not target or target in clean(job.get('location', '')).lower()}
+        jobs = list(self.db.values())
+        for job in jobs:
+            if 'software_score' not in job:
+                category, score, matched = classify_job(job.get('title',''), job.get('description','')); job.update({'category': category, 'software_score': score, 'matched_terms': matched, 'is_software_role': score >= 45})
+        jobs.sort(key=lambda item: (item.get('software_score', 0), item.get('first_seen_time', '')), reverse=True); category_counts, source_counts = {}, {}
+        for job in jobs:
+            category_counts[job.get('category','Other early career')] = category_counts.get(job.get('category','Other early career'), 0) + 1; source_counts[job.get('source','Unknown')] = source_counts.get(job.get('source','Unknown'), 0) + 1
+        DB_PATH.write_text(json.dumps(self.db, indent=2, ensure_ascii=False), encoding='utf-8')
+        latest_health = {}
+        for health in self.source_health:
+            latest_health[health['name']] = health
+        payload = {'generated_at': today, 'generated_timestamp': timestamp, 'all_jobs': jobs, 'today_count': sum(j.get('first_seen') == today for j in jobs), 'new_this_cycle': new_jobs, 'total_jobs': len(jobs), 'software_jobs': sum(bool(j.get('is_software_role')) for j in jobs), 'category_counts': category_counts, 'source_counts': source_counts, 'source_health': list(latest_health.values()), 'sources_configured': source_count}
+        DASHBOARD_DATA_PATH.write_text('const JOBS_DATA = ' + json.dumps(payload, indent=2, ensure_ascii=False) + ';\n', encoding='utf-8')
+    def close(self): self.session.close()
 
 def run_once():
-    """Run scraper once"""
     scraper = JobScraper()
     try:
-        stats = scraper.run_scraping_cycle()
-        print(f"\n✓ Scraping complete!")
-        print(f"  • New jobs: {stats['new']}")
-        print(f"  • Total jobs: {stats['total']}")
-        print(f"  • Open dashboard.html to view results")
-    finally:
-        scraper.cleanup()
-
-
-def run_realtime(interval_minutes: int = 30):
-    """Run scraper continuously at intervals"""
-    scraper = JobScraper()
-    
-    print(f"🔄 Real-time mode activated!")
-    print(f"  • Scraping every {interval_minutes} minutes")
-    print(f"  • Press Ctrl+C to stop")
-    print(f"  • Logs: {LOG_PATH}")
-    print()
-    
-    def job():
-        try:
-            scraper.run_scraping_cycle()
-        except Exception as e:
-            logger.error(f"Error in scheduled job: {e}")
-    
-    # Run immediately on start
-    job()
-    
-    # Schedule periodic runs
-    schedule.every(interval_minutes).minutes.do(job)
-    
-    try:
-        while True:
-            schedule.run_pending()
-            time.sleep(60)  # Check every minute
-    except KeyboardInterrupt:
-        print("\n\n⏹ Stopping real-time scraper...")
-    finally:
-        scraper.cleanup()
-        print("✓ Cleanup complete. Goodbye!")
-
+        stats = scraper.run_cycle(); print(f"\nDone. {stats['new']} new qualifying jobs; {stats['total']} total tracked.")
+    finally: scraper.close()
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Enhanced Job Scraper for Chennai Fresher Jobs"
-    )
-    parser.add_argument(
-        "--realtime",
-        action="store_true",
-        help="Run continuously with scheduled updates"
-    )
-    parser.add_argument(
-        "--interval",
-        type=int,
-        default=30,
-        help="Interval in minutes for real-time mode (default: 30)"
-    )
-    
-    args = parser.parse_args()
-    
-    if args.realtime:
-        run_realtime(args.interval)
-    else:
-        run_once()
-
-
-if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Track Chennai fresher and early-career jobs'); parser.add_argument('--realtime', action='store_true'); parser.add_argument('--interval', type=int, default=30); args = parser.parse_args()
+    if not args.realtime: run_once(); return
+    if schedule is None: raise SystemExit('Install schedule with: pip install -r requirements.txt')
+    scraper = JobScraper()
+    try:
+        def cycle():
+            try: scraper.run_cycle()
+            except Exception: logger.exception('Scraping cycle failed')
+        cycle(); schedule.every(max(5, args.interval)).minutes.do(cycle); logger.info('Realtime mode active; interval=%d minutes', max(5,args.interval))
+        while True: schedule.run_pending(); time.sleep(30)
+    except KeyboardInterrupt: logger.info('Realtime mode stopped')
+    finally: scraper.close()
+if __name__ == '__main__': main()
