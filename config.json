@@ -5,10 +5,38 @@
     "max_experience_years": 1,
     "request_timeout": 20,
     "retry_attempts": 2,
-    "source_delay_seconds": 1.5
+    "source_delay_seconds": 1.5,
+    "detail_delay_seconds": 0.35
   },
-  "fresher_keywords": ["fresher", "freshers", "entry level", "entry-level", "graduate trainee", "campus hire", "trainee", "associate engineer", "0-1 year", "0-1 years", "0-2 years", "junior", "new grad", "graduate engineer", "recent graduate", "walk-in", "walkin", "no experience", "intern", "internship", "apprentice"],
-  "location_keywords": ["chennai", "madras", "tamil nadu", "tamilnadu"],
+  "fresher_keywords": [
+    "fresher",
+    "freshers",
+    "entry level",
+    "entry-level",
+    "graduate trainee",
+    "campus hire",
+    "trainee",
+    "associate engineer",
+    "0-1 year",
+    "0-1 years",
+    "0-2 years",
+    "junior",
+    "new grad",
+    "graduate engineer",
+    "recent graduate",
+    "walk-in",
+    "walkin",
+    "no experience",
+    "intern",
+    "internship",
+    "apprentice"
+  ],
+  "location_keywords": [
+    "chennai",
+    "madras",
+    "tamil nadu",
+    "tamilnadu"
+  ],
   "sources": [
     {
       "name": "Freshersworld · Chennai",
@@ -22,7 +50,8 @@
       "location_selector": "a.bold_font, span.location",
       "already_filtered_for_freshers": true,
       "extract_company_from_title": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "freshersworld"
     },
     {
       "name": "Freshersworld · Software Chennai",
@@ -36,7 +65,8 @@
       "location_selector": "a.bold_font, span.location",
       "already_filtered_for_freshers": true,
       "extract_company_from_title": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "freshersworld"
     },
     {
       "name": "LinkedIn · No experience software",
@@ -48,7 +78,8 @@
       "link_selector": "a.base-card__full-link, a.job-card-list__title",
       "location_selector": "span.job-search-card__location, div.job-card-container__metadata-item",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "generic"
     },
     {
       "name": "Indeed · Entry-level software",
@@ -60,7 +91,8 @@
       "link_selector": "h2.jobTitle a, a.jcs-JobTitle",
       "location_selector": "div.company_location, div.companyLocation",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "generic"
     },
     {
       "name": "Naukri · Fresher software engineering",
@@ -73,7 +105,8 @@
       "location_selector": "li.location",
       "experience_selector": "li.experience",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "generic"
     },
     {
       "name": "Internshala · Software development",
@@ -85,7 +118,8 @@
       "link_selector": "div.heading_4_5 a, a.view_detail_button",
       "location_selector": "div.location_link",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "internshala"
     },
     {
       "name": "Foundit · Fresher Chennai",
@@ -97,7 +131,8 @@
       "link_selector": "a.job-title, h2 a",
       "location_selector": "span.location, div.location",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "generic"
     },
     {
       "name": "Shine · Fresher Chennai",
@@ -109,7 +144,8 @@
       "link_selector": "a.jobTitle, h2 a",
       "location_selector": "div.jobLocation, span.location",
       "already_filtered_for_freshers": true,
-      "max_jobs": 100
+      "max_jobs": 100,
+      "adapter": "generic"
     }
   ]
 }

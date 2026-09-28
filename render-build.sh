@@ -12,5 +12,6 @@ mkdir -p dist
 cp dashboard.html dist/dashboard.html
 cp dashboard.html dist/index.html
 cp dashboard_data.js dist/dashboard_data.js
+cp favicon.svg dist/favicon.svg
 printf 'Published dashboard assets:\n'
 find dist -maxdepth 1 -type f -printf '  %f\n' | sort

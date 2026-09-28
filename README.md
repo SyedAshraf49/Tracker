@@ -41,7 +41,7 @@ Useful settings:
 
 ## Current live run
 
-The expanded configuration was tested on 28 September 2026 and added **37 Chennai qualifying roles** to the cleaned history of **107 jobs**. Freshersworld returned jobs successfully in the sandbox. LinkedIn was blocked by robots.txt, while Indeed, Naukri, Foundit, and Shine returned access/markup errors; those states are exposed by the dashboard source-health panel rather than presented as successful coverage.
+The verified rebuild on 28 September 2026 crawled **40 current listing cards**, followed their detail URLs, retained **10 verified jobs**, and placed **30 records in Needs verification**. Legacy records from earlier scraper versions were removed. The trusted feed never includes an unverified or generic employer name.
 
 ## Deploy on Render
 
@@ -50,7 +50,7 @@ The repository includes [`render.yaml`](render.yaml) and `render-build.sh` for a
 - Render uses the free static-site plan.
 - Each deploy installs the Python dependencies, runs one scraper cycle, and publishes only `dashboard.html` and `dashboard_data.js` from `dist/`.
 - Scraper source code, configuration, logs, and the job database are not exposed by the deployed site.
-- The dashboard is a static snapshot; to refresh it, trigger a new deploy or run the scraper locally and push the generated data.
+- The dashboard is a static snapshot; to refresh it, trigger a new deploy or run the scraper locally and push the generated data. Each deploy also crawls job-detail pages and rebuilds the verified/review split.
 
 In Render, choose **New → Blueprint**, select `SyedAshraf49/Tracker`, and apply the Blueprint. Render will read the committed `render.yaml` automatically.
 
@@ -61,6 +61,10 @@ python3 -m http.server $PORT --bind 0.0.0.0 --directory dist
 ```
 
 The root `index.html` is also included as a safe fallback for services that are still pointed at the repository root.
+
+## Verified collection
+
+The scraper now uses source-specific listing adapters, follows each job-detail URL, reads `JobPosting` JSON-LD and detail-page metadata, normalizes titles, separates recruiter names, and writes `verification_status` values of `verified` or `needs_verification`. Only verified records appear in the main dashboard feed. Saved HTML fixtures in `tests/fixtures/` protect the Freshersworld and Internshala parsers from selector regressions; run `python3 -m unittest discover -s tests -v`.
 
 ## Dashboard UI
 
